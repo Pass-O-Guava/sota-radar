@@ -10,7 +10,7 @@
 | 分类 | 总数 | 闭源 | 开源 |
 |------|------|------|------|
 | 🅐 闭源文本与推理模型 | **10** | 10 | — |
-| 🅐 开源文本大模型 | 9 | — | 9 |
+| 🅐 开源文本大模型 | 8 | — | 8 |
 | 🅱 闭源 VLM | 4 | 4 | — |
 | 🅱 开源 VLM | 17 | — | 17 |
 | 🎧 音频-语言模型 | 3 | 0 | 3 |
@@ -49,9 +49,65 @@
 
 ---
 
-## 🆕 本月新增（2026年发布）
+## 🆕 2026年新发模型（按月倒序）
 
-GPT-5 · Claude Opus/Sonnet 4.6 · Gemini 3.1 Pro · Grok 4.20 · Gemini 3.1 Flash Live · Qwen3.6-Plus · GLM-5 · GLM-5V-Turbo · Kimi K2.5 · Qwen3-Coder-Next · MiniMax M2.5 · Qwen3.5 系列 · Step-3.5-Flash · Cosmos-Reason2 · SenseNova-MARS
+> ⚠️ 调研进行中，列表持续更新
+
+---
+
+### 2026年4月
+| 模型 | 发布方 | 许可证 | 亮点 |
+|------|--------|--------|------|
+| **Qwen3.6-Plus** 🆕 | 阿里巴巴 | Tongyi Qianwen | 最新旗舰，1M上下文 |
+| **GLM-5V-Turbo** 🆕 | 智谱AI/Z.ai | 🔒专有 | 视觉编程，Agent |
+
+---
+
+### 2026年3月
+| 模型 | 发布方 | 许可证 | 亮点 |
+|------|--------|--------|------|
+| **Gemini 3.1 Flash Live** | Google | 🔒专有 | 实时语音旗舰，<1s延迟 |
+| **Grok 4.20** | xAI | 🔒专有 | 2M上下文，推理 |
+| **MiniMax M2.7** 🆕 | MiniMax | 🔒专有 | 闭源旗舰 |
+
+---
+
+### 2026年2月
+| 模型 | 发布方 | 许可证 | 亮点 |
+|------|--------|--------|------|
+| **Claude Opus 4.6** | Anthropic | 🔒专有 | GPQA 87.4%，最强智能 |
+| **Claude Sonnet 4.6** | Anthropic | 🔒专有 | $3/1M，性价比最优 |
+| **Gemini 3.1 Pro** | Google | 🔒专有 | GPQA 94.3%，1M上下文 |
+| **GLM-5** 🆕 | 智谱AI/Z.ai | **MIT** | Frontier级，200K上下文 |
+| **MiniMax M2.5** 🆕 | MiniMax | **Apache 2.0** | $1/h，编程开源 |
+| **Qwen3.5-397B-A17B** 🆕 | 阿里巴巴 | Qwen3.5 License | MoE超大模型 |
+| **Qwen3.5 系列** 🆕 | 阿里巴巴 | Qwen3.5 License | 0.8B~35B全规格 |
+| **Qwen3-Coder-Next** 🆕 | 阿里巴巴 | Tongyi Qianwen | 80B MoE编程专项 |
+| **Step-3.5-Flash** 🆕 | StepFun AI | 待确认 | 196B稀疏MoE |
+| **Recraft V4** 🆕 | Recraft | 🔒专有 | HuggingFace排行榜第一 |
+
+---
+
+### 2026年1月
+| 模型 | 发布方 | 许可证 | 亮点 |
+|------|--------|--------|------|
+| **Kimi K2.5** 🆕 | Moonshot AI | **MIT** | 开源多模态Agent |
+| **Qwen3-ASR-0.6B** 🆕 | 阿里巴巴 | Tongyi Qianwen | 语音识别，52语言 |
+| **SenseNova-MARS** 🆕 | 商汤科技 | 待确认 | 多模态Agent推理 |
+| **Qwen3-VL-Embedding** 🆕 | 阿里巴巴 | **Apache 2.0** | 多模态Embedding第一 |
+
+---
+
+### 2025年12月及更早
+| 模型 | 发布方 | 许可证 | 亮点 |
+|------|--------|--------|------|
+| **Qwen3-Omni** | 阿里巴巴 | Tongyi Qianwen | 全模态+语音输出 |
+| **Cosmos-Reason2** | NVIDIA | NVIDIA Open | 物理AI推理 |
+| **FLUX.2** | Black Forest Labs | 🔒专有 | 开源基准胜率66.6% |
+| **InternVL3.5-Flash** | 上海AI Lab | Apache 2.0 | VLM快速版 |
+| **GPT-5** | OpenAI | 🔒专有 | 推理+Agent旗舰 |
+| **DeepSeek-R1** | DeepSeek | DeepSeek License | 推理开源标杆 |
+| **DeepSeek-V3** | DeepSeek | DeepSeek License | 基础LLM最强 |
 
 ---
 
