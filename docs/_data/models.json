@@ -1042,6 +1042,30 @@
       "notes": "Gemma 4系列旗舰，Apache 2.0开源"
     },
     {
+      "id": "mistral-small-4",
+      "name": "Mistral Small 4",
+      "developer": "Mistral AI",
+      "category": "open_llm",
+      "release_date": "2026-03-16",
+      "license": "apache_2",
+      "context_window": "128K",
+      "benchmarks": {},
+      "pricing": "",
+      "highlights": [
+        "119B MoE混合模型",
+        "统一instruct+reasoning+coding多模态",
+        "Apache 2.0开源可商用",
+        "NVIDIA Build首发"
+      ],
+      "use_cases": [
+        "通用对话",
+        "代码生成",
+        "推理任务"
+      ],
+      "hf_url": "https://huggingface.co/mistralai/mistral-small-2603",
+      "notes": "2026-03-15发布，NVIDIA Build/HuggingFace同步上架；统一instruct/reasoning/coding"
+    },
+    {
       "id": "glm-51",
       "name": "GLM-5.1",
       "developer": "智谱AI/Z.ai",
