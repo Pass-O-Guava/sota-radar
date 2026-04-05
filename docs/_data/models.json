@@ -1,0 +1,670 @@
+{
+  "_comment": "SOTA Radar 单一数据源 - 所有文档从这个文件生成",
+  "_last_updated": "2026-04-05",
+  "_updated_by": "调研团队 + 质检团队",
+  "models": [
+    {
+      "id": "gpt-5",
+      "name": "GPT-5",
+      "developer": "OpenAI",
+      "category": "closed_llm",
+      "release_date": "2025-08-07",
+      "license": "proprietary",
+      "context_window": "200K",
+      "benchmarks": {
+        "mmlu": "92.5%",
+        "gpqa": "85.7%",
+        "swe_bench": "74.9%",
+        "humaneval": "~92%"
+      },
+      "pricing": "ChatGPT Pro $200/月；API $1.75/1M输入",
+      "highlights": ["最强旗舰，推理+Agent", "支持thinking模式"],
+      "use_cases": ["复杂推理任务", "高级编码", "科学研究"],
+      "hf_url": "",
+      "notes": "发布后持续迭代，2026年初已达GPT-5.4"
+    },
+    {
+      "id": "claude-opus-46",
+      "name": "Claude Opus 4.6",
+      "developer": "Anthropic",
+      "category": "closed_llm",
+      "release_date": "2026-02-05",
+      "license": "proprietary",
+      "context_window": "1M",
+      "benchmarks": {
+        "mmlu": "~90.8%",
+        "gpqa": "87.4%",
+        "swe_bench": "80.8%",
+        "humaneval": "~95%"
+      },
+      "pricing": "$15/1M输入，$75/1M输出",
+      "highlights": ["200K Elo领先（Artificial Analysis）", "SWE-bench 80.8%", "原生多Agent协作", "BigLaw Bench 90.2%"],
+      "use_cases": ["企业级复杂推理", "大规模代码库开发", "Agent工作流"],
+      "hf_url": "",
+      "notes": "训练数据截止2025年8月"
+    },
+    {
+      "id": "claude-sonnet-46",
+      "name": "Claude Sonnet 4.6",
+      "developer": "Anthropic",
+      "category": "closed_llm",
+      "release_date": "2026-02-17",
+      "license": "proprietary",
+      "context_window": "200K",
+      "benchmarks": {
+        "mmlu": "~89%",
+        "gpqa": "~85%",
+        "swe_bench": "79.6%",
+        "osworld": "94%",
+        "humaneval": "~96%"
+      },
+      "pricing": "$3/1M输入，$15/1M输出",
+      "highlights": ["性价比最优", "OSWorld 94%", "接近Opus水平"],
+      "use_cases": ["编码任务", "计算机使用自动化", "金融分析"],
+      "hf_url": "",
+      "notes": "新版默认模型，训练数据截止2026年1月"
+    },
+    {
+      "id": "gemini-31-pro",
+      "name": "Gemini 3.1 Pro",
+      "developer": "Google DeepMind",
+      "category": "closed_llm",
+      "release_date": "2026-02-19",
+      "license": "proprietary",
+      "context_window": "1M",
+      "benchmarks": {
+        "mmlu": "~91%",
+        "gpqa": "94.3%",
+        "swe_bench": "80.6%",
+        "arc_agi_2": "77.1%"
+      },
+      "pricing": "$2.5/1M输入，$15/1M输出",
+      "highlights": ["GPQA 94.3%（人类最后考试领先）", "ARC-AGI-2领先", "Adaptive Thinking"],
+      "use_cases": ["超长文档处理", "科学研究", "复杂推理", "Agent开发"],
+      "hf_url": "",
+      "notes": "1M上下文beta阶段"
+    },
+    {
+      "id": "grok-420",
+      "name": "Grok 4.20",
+      "developer": "xAI",
+      "category": "closed_llm",
+      "release_date": "2026-02-17",
+      "license": "proprietary",
+      "context_window": "2M",
+      "benchmarks": {
+        "mmlu": "~87%",
+        "gpqa": "~90%",
+        "humaneval": "~97%"
+      },
+      "pricing": "$2/1M输入，$6/1M输出",
+      "highlights": ["2M上下文行业最大", "原生实时搜索集成", "非幻觉率78%（世界纪录）"],
+      "use_cases": ["长文本处理", "深度网络研究", "多应用工作流"],
+      "hf_url": "",
+      "notes": "Beta 2026-02-17，API正式 2026-03-10"
+    },
+    {
+      "id": "gpt-45",
+      "name": "GPT-4.5",
+      "developer": "OpenAI",
+      "category": "closed_llm",
+      "release_date": "2025-02-27",
+      "license": "proprietary",
+      "context_window": "128K",
+      "benchmarks": {
+        "mmlu": "~93.8%"
+      },
+      "pricing": "API $75/1M输入（已从平台弃用，2025-07停用）",
+      "highlights": ["通过无监督学习规模化提升", "先向ChatGPT Pro用户开放"],
+      "use_cases": ["聊天对话", "创意写作", "模式识别"],
+      "hf_url": "",
+      "notes": "⚠️ 已从API弃用，引导迁移至GPT-4.1及后续版本"
+    },
+    {
+      "id": "gemini-31-flash-live",
+      "name": "Gemini 3.1 Flash Live",
+      "developer": "Google DeepMind",
+      "category": "closed_llm",
+      "release_date": "2026-03-26",
+      "license": "proprietary",
+      "context_window": "32K(音频)",
+      "benchmarks": {},
+      "pricing": "Google AI Studio/Gemini API标准费率",
+      "highlights": ["Google最高质量音频+语音模型", "实时对话延迟<1秒", "支持音频/视频/工具实时多模态"],
+      "use_cases": ["实时语音助手", "AI电话", "视频通话实时翻译"],
+      "hf_url": "",
+      "notes": "Gemini Live重大升级"
+    },
+    {
+      "id": "o4-mini",
+      "name": "o4-mini",
+      "developer": "OpenAI",
+      "category": "closed_llm",
+      "release_date": "2025-04-16",
+      "license": "proprietary",
+      "context_window": "200K",
+      "benchmarks": {
+        "mmlu": "80.1%",
+        "gpqa": "50.3%",
+        "aime_2025": "92.7%",
+        "humaneval": "~99%"
+      },
+      "pricing": "$1.10/1M输入，$4/1M输出",
+      "highlights": ["高性价比推理", "AIME 92.7%", "完整工具访问"],
+      "use_cases": ["数学推理", "编程辅助", "科学问题"],
+      "hf_url": "",
+      "notes": ""
+    },
+    {
+      "id": "qwen36-plus",
+      "name": "Qwen3.6-Plus",
+      "developer": "阿里巴巴",
+      "category": "open_llm",
+      "release_date": "2026-04-02",
+      "license": "tongyi_qianwen",
+      "context_window": "1M",
+      "benchmarks": {
+        "mmlu": "~92%",
+        "humaneval": "~88%",
+        "math_500": "~92%"
+      },
+      "pricing": "",
+      "highlights": ["最新旗舰", "1M上下文"],
+      "use_cases": ["通用对话", "Agent"],
+      "hf_url": "待确认",
+      "notes": "⚠️模态待核实（BuildFastWithAI称text-only，Alibaba博客提及视觉感知）"
+    },
+    {
+      "id": "glm-5",
+      "name": "GLM-5",
+      "developer": "智谱AI/Z.ai",
+      "category": "open_llm",
+      "release_date": "2026-02-11",
+      "license": "mit",
+      "context_window": "200K",
+      "benchmarks": {
+        "mmlu": "~91%",
+        "humaneval": "~86%",
+        "aime": "~83%",
+        "math_500": "~90%"
+      },
+      "pricing": "",
+      "highlights": ["MIT许可证开源", "200K上下文", "对标Claude Opus 4.6"],
+      "use_cases": ["通用对话", "Agent", "复杂系统级工程"],
+      "hf_url": "https://huggingface.co/zai-org/GLM-5",
+      "notes": "中国大厂首个MIT许可证开源Frontier级模型"
+    },
+    {
+      "id": "qwen35-series",
+      "name": "Qwen3.5 系列",
+      "developer": "阿里巴巴",
+      "category": "open_llm",
+      "release_date": "2026-02-24",
+      "license": "qwen35_license",
+      "context_window": "128K",
+      "benchmarks": {},
+      "pricing": "",
+      "highlights": ["0.8B~35B全规格覆盖", "MoE+稠密双路线"],
+      "use_cases": ["通用对话", "本地部署"],
+      "hf_url": "https://huggingface.co/Qwen/Qwen3.5",
+      "notes": "小模型(0.8B~3B)为纯文本，无视觉编码器"
+    },
+    {
+      "id": "step-35-flash",
+      "name": "Step-3.5-Flash",
+      "developer": "StepFun AI",
+      "category": "open_llm",
+      "release_date": "2026-02-02",
+      "license": "unknown",
+      "benchmarks": {},
+      "pricing": "",
+      "highlights": ["196B总参数稀疏MoE", "极速推理"],
+      "use_cases": ["Agent", "快速响应任务"],
+      "hf_url": "https://huggingface.co/stepfun-ai/Step-3.5-Flash",
+      "notes": "许可证待确认"
+    },
+    {
+      "id": "deepseek-v3",
+      "name": "DeepSeek-V3",
+      "developer": "DeepSeek",
+      "category": "open_llm",
+      "release_date": "2025-01-28",
+      "license": "deepseek_license",
+      "context_window": "128K",
+      "benchmarks": {
+        "mmlu": "~88%",
+        "humaneval": "~85%",
+        "aime": "~83%",
+        "math_500": "~90%"
+      },
+      "pricing": "",
+      "highlights": ["671B总/37B激活MoE", "基础LLM最强"],
+      "use_cases": ["通用对话", "复杂推理", "代码生成"],
+      "hf_url": "https://huggingface.co/deepseek-ai/DeepSeek-V3",
+      "notes": ""
+    },
+    {
+      "id": "deepseek-r1",
+      "name": "DeepSeek-R1",
+      "developer": "DeepSeek",
+      "category": "open_llm",
+      "release_date": "2025-01-20",
+      "license": "deepseek_license",
+      "benchmarks": {
+        "aime_2024": "~86%",
+        "math_500": "~93%",
+        "swe_bench": "超越o1"
+      },
+      "pricing": "",
+      "highlights": ["强化学习驱动推理突破", "AIME~86%", "开源推理分水岭"],
+      "use_cases": ["复杂推理任务", "数学问题", "代码生成"],
+      "hf_url": "https://huggingface.co/deepseek-ai/DeepSeek-R1",
+      "notes": "R1-0528更新：2025-05"
+    },
+    {
+      "id": "qwen25-series",
+      "name": "Qwen2.5 系列",
+      "developer": "阿里巴巴",
+      "category": "open_llm",
+      "release_date": "2024-09",
+      "license": "tongyi_qianwen",
+      "benchmarks": {},
+      "pricing": "",
+      "highlights": ["0.5B~72B全规格", "历史版本"],
+      "use_cases": ["通用对话"],
+      "hf_url": "https://huggingface.co/Qwen/Qwen2.5",
+      "notes": "⚠️静态，19个月无更新"
+    },
+    {
+      "id": "llama-33",
+      "name": "Llama 3.3",
+      "developer": "Meta",
+      "category": "open_llm",
+      "release_date": "2024-12",
+      "license": "llama_license",
+      "benchmarks": {},
+      "pricing": "",
+      "highlights": ["70B", "历史版本"],
+      "use_cases": ["通用对话"],
+      "hf_url": "https://huggingface.co/meta-llama/Llama-3.3-70B-Instruct",
+      "notes": "⚠️需向Meta申请商业授权"
+    },
+    {
+      "id": "claude-opus-45",
+      "name": "Claude Opus 4.5",
+      "developer": "Anthropic",
+      "category": "closed_llm",
+      "release_date": "2025-11-24",
+      "license": "proprietary",
+      "context_window": "200K",
+      "benchmarks": {
+        "mmlu": "~90.8%",
+        "gpqa": "~83%",
+        "swe_bench": "80.9%",
+        "humaneval": "~95%"
+      },
+      "pricing": "$15/1M输入，$75/1M输出",
+      "highlights": ["发布时全球第一SWE-bench", "Chrome和Excel原生集成"],
+      "use_cases": ["企业级编码", "Agent构建", "深度研究"],
+      "hf_url": "",
+      "notes": "知识截止2025年5月"
+    },
+    {
+      "id": "claude-sonnet-45",
+      "name": "Claude Sonnet 4.5",
+      "developer": "Anthropic",
+      "category": "closed_llm",
+      "release_date": "2025-09-29",
+      "license": "proprietary",
+      "context_window": "200K",
+      "benchmarks": {
+        "mmlu": "89.1%",
+        "swe_bench": "77.2%",
+        "humaneval": "97.6%"
+      },
+      "pricing": "$3/1M输入，$15/1M输出",
+      "highlights": ["发布时全球最佳编码模型", "HumanEval 97.6%持续领先"],
+      "use_cases": ["前端/UI开发", "自主Agent", "编码任务"],
+      "hf_url": "",
+      "notes": ""
+    },
+    {
+      "id": "kimi-k25",
+      "name": "Kimi K2.5",
+      "developer": "Moonshot AI",
+      "category": "open_vlm",
+      "release_date": "2026-01-27",
+      "license": "mit",
+      "benchmarks": {
+        "mmmup_pro": "78.5%",
+        "mathvista": "90.1%"
+      },
+      "pricing": "",
+      "highlights": ["MIT完全开源", "MMMU-Pro 78.5%", "MathVista 90.1%", "开源多模态Agent"],
+      "use_cases": ["多模态理解", "Agent任务", "视觉推理"],
+      "hf_url": "https://huggingface.co/moonshotai/Kimi-K2.5",
+      "notes": "MIT许可证"
+    },
+    {
+      "id": "qwen35-397b-a17b",
+      "name": "Qwen3.5-397B-A17B",
+      "developer": "阿里巴巴",
+      "category": "open_vlm",
+      "release_date": "2026-02-16",
+      "license": "qwen35_license",
+      "benchmarks": {},
+      "pricing": "",
+      "highlights": ["397B总/17B激活MoE", "原生视觉-语言训练", "早期融合架构"],
+      "use_cases": ["复杂多模态推理", "视频理解"],
+      "hf_url": "https://huggingface.co/Qwen/Qwen3.5-397B-A17B",
+      "notes": "NVIDIA NIM和together AI官方确认：原生VLM"
+    },
+    {
+      "id": "minimax-m25",
+      "name": "MiniMax M2.5",
+      "developer": "MiniMax",
+      "category": "open_vlm",
+      "release_date": "2026-02-12",
+      "license": "apache_2",
+      "benchmarks": {
+        "swe_bench": "80.2%"
+      },
+      "pricing": "$1/小时",
+      "highlights": ["Apache 2.0开源", "SWE-bench 80.2%", "$1/h接近Frontier级", "原生多模态"],
+      "use_cases": ["编程任务", "Agent工作流"],
+      "hf_url": "https://huggingface.co/blog/mlabonne/minimax-m25",
+      "notes": "官方确认：原生多模态模型"
+    },
+    {
+      "id": "internvl35",
+      "name": "InternVL3.5",
+      "developer": "上海AI Lab",
+      "category": "open_vlm",
+      "release_date": "2025-08-25",
+      "license": "mit",
+      "benchmarks": {
+        "mmmup": "77.7%",
+        "mathvista": "82.7%"
+      },
+      "pricing": "",
+      "highlights": ["开源VLM综合最强", "Cascade RL控幻觉"],
+      "use_cases": ["视觉理解", "文档分析", "多模态推理"],
+      "hf_url": "https://huggingface.co/OpenGVLab/InternVL3_5-8B",
+      "notes": ""
+    },
+    {
+      "id": "qwen3-vl-235b",
+      "name": "Qwen3-VL-235B-A22B",
+      "developer": "阿里巴巴",
+      "category": "open_vlm",
+      "release_date": "2025-09-23",
+      "license": "apache_2",
+      "context_window": "256K",
+      "benchmarks": {
+        "mmmup_pro": "78.7%"
+      },
+      "pricing": "",
+      "highlights": ["235B总/22B激活MoE", "256K上下文", "原生视频理解"],
+      "use_cases": ["超长文档", "视频理解", "多图交错"],
+      "hf_url": "https://huggingface.co/Qwen/Qwen3-VL-235B-A22B-Instruct",
+      "notes": ""
+    },
+    {
+      "id": "glm-4v",
+      "name": "GLM-4.6V",
+      "developer": "智谱AI",
+      "category": "open_vlm",
+      "release_date": "2025-12-08",
+      "license": "apache_2",
+      "benchmarks": {
+        "mathvista": "开源SOTA"
+      },
+      "pricing": "",
+      "highlights": ["MathVista开源SOTA", "原生工具调用", "131K上下文"],
+      "use_cases": ["数学VLM", "视觉问答"],
+      "hf_url": "https://huggingface.co/THUDM/GLM-4V-9B",
+      "notes": ""
+    },
+    {
+      "id": "phi4-multimodal",
+      "name": "Phi-4-Multimodal",
+      "developer": "微软",
+      "category": "open_vlm",
+      "release_date": "2025-02-26",
+      "license": "mit",
+      "benchmarks": {},
+      "pricing": "",
+      "highlights": ["语音+图+文三模态", "MIT许可证"],
+      "use_cases": ["多模态理解", "语音+视觉"],
+      "hf_url": "",
+      "notes": ""
+    },
+    {
+      "id": "llava-cot",
+      "name": "LLaVA-CoT",
+      "developer": "PKU",
+      "category": "open_vlm",
+      "release_date": "2025（ICCV）",
+      "license": "mit",
+      "benchmarks": {
+        "mmmup": "超越Gemini-1.5-pro"
+      },
+      "pricing": "",
+      "highlights": ["视觉链式推理", "ICCV 2025"],
+      "use_cases": ["视觉推理", "链式思考"],
+      "hf_url": "",
+      "notes": ""
+    },
+    {
+      "id": "deepseek-vl2",
+      "name": "DeepSeek-VL2",
+      "developer": "DeepSeek",
+      "category": "open_vlm",
+      "release_date": "2024-12-13",
+      "license": "deepseek_license",
+      "benchmarks": {
+        "mmmup": "61.3%",
+        "mathvista": "79.0%"
+      },
+      "pricing": "",
+      "highlights": ["MoE性价比"],
+      "use_cases": ["视觉理解"],
+      "hf_url": "",
+      "notes": ""
+    },
+    {
+      "id": "claude-sonnet-46-vlm",
+      "name": "Claude Sonnet 4.6（vision）",
+      "developer": "Anthropic",
+      "category": "closed_vlm",
+      "release_date": "2026-02-17",
+      "license": "proprietary",
+      "benchmarks": {
+        "mmmup_pro": "83.58%"
+      },
+      "pricing": "$3/1M输入，$15/1M输出",
+      "highlights": ["MMMU-Pro 83.58%（所有VLM最高）", "原生视觉+计算机使用"],
+      "use_cases": ["视觉理解", "计算机使用自动化"],
+      "hf_url": "",
+      "notes": ""
+    },
+    {
+      "id": "gpt-4o",
+      "name": "GPT-4o",
+      "developer": "OpenAI",
+      "category": "closed_vlm",
+      "release_date": "持续更新",
+      "license": "proprietary",
+      "benchmarks": {
+        "mmmup_pro": "~70.7%"
+      },
+      "pricing": "",
+      "highlights": ["多模态全能", "持续迭代更新"],
+      "use_cases": ["多模态理解", "视觉对话"],
+      "hf_url": "",
+      "notes": ""
+    },
+    {
+      "id": "glm-5v-turbo",
+      "name": "GLM-5V-Turbo",
+      "developer": "智谱AI/Z.ai",
+      "category": "closed_vlm",
+      "release_date": "2026-04-01",
+      "license": "proprietary",
+      "benchmarks": {
+        "mmmup_pro": "61.7%",
+        "mathvista": "71.3%"
+      },
+      "pricing": "",
+      "highlights": ["视觉编程", "原生代码生成", "Agent工程优化"],
+      "use_cases": ["视觉编程", "Agent工作流"],
+      "hf_url": "",
+      "notes": ""
+    },
+    {
+      "id": "qwen3-asr",
+      "name": "Qwen3-ASR-0.6B",
+      "developer": "阿里巴巴",
+      "category": "alm",
+      "release_date": "2026-01-29",
+      "license": "tongyi_qianwen",
+      "pricing": "",
+      "highlights": ["语音识别", "0.6B/1.7B双规格"],
+      "use_cases": ["语音识别", "会议转写"],
+      "hf_url": "",
+      "notes": ""
+    },
+    {
+      "id": "cosmos-reason2",
+      "name": "Cosmos-Reason2",
+      "developer": "NVIDIA",
+      "category": "video",
+      "release_date": "2025-12-19",
+      "license": "nvidia_open",
+      "pricing": "",
+      "highlights": ["物理AI推理", "2B/8B/72B多规格"],
+      "use_cases": ["机器人学", "物理AI"],
+      "hf_url": "https://github.com/nvidia-cosmos/cosmos-reason2",
+      "notes": ""
+    },
+    {
+      "id": "sensenova-mars",
+      "name": "SenseNova-MARS",
+      "developer": "商汤科技",
+      "category": "video",
+      "release_date": "2026-01-29",
+      "license": "unknown",
+      "pricing": "",
+      "highlights": ["多模态Agent推理", "动态视觉推理"],
+      "use_cases": ["Agent", "视觉推理"],
+      "hf_url": "https://github.com/OpenSenseNova/SenseNova-MARS",
+      "notes": "许可证待确认"
+    },
+    {
+      "id": "qwen3-coder-next",
+      "name": "Qwen3-Coder-Next",
+      "developer": "阿里巴巴",
+      "category": "code",
+      "release_date": "2026-02-04",
+      "license": "tongyi_qianwen",
+      "benchmarks": {
+        "swe_bench": ">70%"
+      },
+      "pricing": "",
+      "highlights": ["80B MoE / 3B激活", "28 AA Index", "编程专项"],
+      "use_cases": ["代码生成", "Agent编程"],
+      "hf_url": "https://huggingface.co/Qwen/Qwen3-Coder-Next",
+      "notes": ""
+    },
+    {
+      "id": "qwen3-omni",
+      "name": "Qwen3-Omni",
+      "developer": "阿里巴巴",
+      "category": "multimodal",
+      "release_date": "2025-12",
+      "license": "tongyi_qianwen",
+      "pricing": "",
+      "highlights": ["全模态+语音输出", "原生端到端多模态"],
+      "use_cases": ["全模态理解", "语音对话"],
+      "hf_url": "",
+      "notes": ""
+    },
+    {
+      "id": "deepseek-janus-pro",
+      "name": "DeepSeek Janus-Pro",
+      "developer": "DeepSeek",
+      "category": "multimodal",
+      "release_date": "2025-01-27",
+      "license": "deepseek_license",
+      "pricing": "",
+      "highlights": ["理解+生成统一"],
+      "use_cases": ["多模态理解", "图像生成"],
+      "hf_url": "",
+      "notes": ""
+    },
+    {
+      "id": "qwen3-vl-embedding",
+      "name": "Qwen3-VL-Embedding",
+      "developer": "阿里巴巴",
+      "category": "embedding",
+      "release_date": "2026-01",
+      "license": "apache_2",
+      "benchmarks": {
+        "mmekb_v2": "77.8 #1"
+      },
+      "pricing": "",
+      "highlights": ["多模态Embedding(text+图+视频)", "MMEB-V2 #1", "30+语言"],
+      "use_cases": ["语义检索", "多模态RAG"],
+      "hf_url": "https://huggingface.co/Qwen/Qwen3-VL-Embedding-8B",
+      "notes": ""
+    },
+    {
+      "id": "nv-embed-v2",
+      "name": "NV-Embed-v2",
+      "developer": "NVIDIA",
+      "category": "embedding",
+      "release_date": "2024-08",
+      "license": "nvidia",
+      "benchmarks": {
+        "mteb": "69.32 #1"
+      },
+      "pricing": "",
+      "highlights": ["MTEB #1持续领先", "Llama-3.1-8B微调"],
+      "use_cases": ["英文语义检索"],
+      "hf_url": "",
+      "notes": "非商业默认，申请后可商用"
+    },
+    {
+      "id": "yout-embedding",
+      "name": "Youtu-Embedding",
+      "developer": "腾讯优图",
+      "category": "embedding",
+      "release_date": "2025-08",
+      "license": "proprietary",
+      "benchmarks": {
+        "cmteb": "77.58 #1"
+      },
+      "pricing": "",
+      "highlights": ["CMTEB #1", "中文语义检索最强"],
+      "use_cases": ["中文语义检索"],
+      "hf_url": "",
+      "notes": "腾讯云API"
+    },
+    {
+      "id": "bge-m3",
+      "name": "bge-m3",
+      "developer": "北京AI Lab",
+      "category": "embedding",
+      "release_date": "2024-02",
+      "license": "apache_2",
+      "benchmarks": {
+        "mteb": "~63.0"
+      },
+      "pricing": "",
+      "highlights": ["3M：多功能+多语言+多粒度", "100+语言"],
+      "use_cases": ["多语言检索"],
+      "hf_url": "",
+      "notes": ""
+    }
+  ]
+}
