@@ -10,9 +10,9 @@
 | 分类 | 总数 | 闭源 | 开源 |
 |------|------|------|------|
 | 🅐 闭源文本与推理模型 | **10** | 10 | — |
-| 🅐 开源文本大模型 | 10 | — | 10 |
+| 🅐 开源文本大模型 | 9 | — | 9 |
 | 🅱 闭源 VLM | 4 | 4 | — |
-| 🅱 开源 VLM | 16 | — | 16 |
+| 🅱 开源 VLM | 17 | — | 17 |
 | 🎧 音频-语言模型 | 3 | 0 | 3 |
 | 🎬 视频理解模型 | 4 | 0 | 4 |
 | 🎨 图像生成模型 | 5 | 4 | 1 |
@@ -42,20 +42,21 @@
 
 ---
 
-## 🅐 开源文本大模型（10个）✅可商用
+## 🅐 开源文本大模型（9个）✅可商用
 
 | # | 模型 | 开发方 | 参数量 | 发布日期 | 许可证 | 亮点 |
 |---|------|--------|--------|----------|--------|------|
 | 1 | **Qwen3.6-Plus** 🆕 | 阿里巴巴 | 待确认 | 2026-04-02 | Tongyi Qianwen | 最新旗舰 |
 | 2 | **GLM-5** 🆕 | 智谱AI | — | 2026-02-11 | **MIT** | Frontier级，200K上下文 |
-| 3 | **Qwen3.5-397B-A17B** 🆕 | 阿里巴巴 | 397B/17B激活 | 2026-02-16 | Qwen3.5 License | MoE超大模型 |
-| 4 | **Qwen3.5 系列** 🆕 | 阿里巴巴 | 0.8B~35B | 2026-02-24 | Qwen3.5 License | 全规格覆盖 |
-| 5 | **MiniMax M2.5** 🆕 | MiniMax | MoE | 2026-02-12 | **Apache 2.0** | $1/h，接近Frontier |
-| 6 | **Step-3.5-Flash** 🆕 | StepFun AI | 196B总 | 2026-02-02 | 需确认 | 极速MoE |
-| 7 | DeepSeek-V3 | DeepSeek | 671B/37B激活 | 2025-01-28 | DeepSeek License | 基础LLM最强 |
-| 8 | DeepSeek-R1 | DeepSeek | 671B/37B激活 | 2025-01-20 | DeepSeek License | 推理最强，AIME~86% |
-| 9 | Qwen2.5 系列 | 阿里巴巴 | 0.5B~72B | 2024-09 | Tongyi Qianwen | ⚠️静态，19个月 |
-| 10 | Llama 3.3 | Meta | 70B | 2024-12 | Llama License ⚠️ | ⚠️需申请 |
+| 3 | **Qwen3.5 系列** 🆕 | 阿里巴巴 | 0.8B~35B | 2026-02-24 | Qwen3.5 License | 全规格覆盖 |
+| 4 | **MiniMax M2.5** 🆕 | MiniMax | MoE | 2026-02-12 | **Apache 2.0** | $1/h，接近Frontier |
+| 5 | **Step-3.5-Flash** 🆕 | StepFun AI | 196B总 | 2026-02-02 | 需确认 | 极速MoE |
+| 6 | DeepSeek-V3 | DeepSeek | 671B/37B激活 | 2025-01-28 | DeepSeek License | 基础LLM最强 |
+| 7 | DeepSeek-R1 | DeepSeek | 671B/37B激活 | 2025-01-20 | DeepSeek License | 推理最强，AIME~86% |
+| 8 | Qwen2.5 系列 | 阿里巴巴 | 0.5B~72B | 2024-09 | Tongyi Qianwen | ⚠️静态，19个月 |
+| 9 | Llama 3.3 | Meta | 70B | 2024-12 | Llama License ⚠️ | ⚠️需申请 |
+
+> ⚠️ **更正（2026-04-05）**：`Qwen3.5-397B-A17B` 已从本分类移除——NVIDIA NIM / Together AI 官方页面确认，该模型是**原生视觉-语言模型（VLM）**，应归入开源 VLM 分类。
 
 ---
 
@@ -70,26 +71,27 @@
 
 ---
 
-## 🅱 开源 VLM（16个）✅可商用
+## 🅱 开源 VLM（17个）✅可商用
 
 | # | 模型 | 开发方 | 参数量 | 发布日期 | 许可证 | MMMU | 亮点 |
 |---|------|--------|--------|----------|--------|------|------|
 | 1 | **Kimi K2.5** 🆕 | Moonshot AI | ~200B | 2026-01-27 | **MIT** | Pro: 78.5% | MIT开源，MMMU-Pro 78.5% |
-| 2 | **InternVL3.5-Flash** 🆕 | 上海AI Lab | 8B~78B | 2025-10-14 | Apache 2.0 | — | 快速版 |
-| 3 | InternVL3.5 | 上海AI Lab | 8B~78B | 2025-08-25 | **MIT** | 77.7% | 开源VLM综合最强 |
-| 4 | Qwen3-VL-235B-A22B | 阿里巴巴 | 235B/22B激活 | 2025-09-23 | Apache 2.0 | Pro: 78.7% | MoE，256K上下文 |
-| 5 | Qwen3-VL（通用） | 阿里巴巴 | 3B/8B/30B | 2025-09-23 | Tongyi Qianwen | — | 通用版 |
-| 6 | Qwen2.5-VL | 阿里巴巴 | 3B~72B | 2025-01 | Tongyi Qianwen | — | ⚠️静态 |
-| 7 | InternVL3 | 上海AI Lab | 1B~78B | 2025-04 | Apache 2.0 | — | ⚠️静态 |
-| 8 | **GLM-4.6V** 🆕 | 智谱AI | ~9B | **2025-12-08** | **Apache 2.0** | — | MathVista开源SOTA |
-| 9 | Phi-4-Multimodal | 微软 | 8B | 2025-02 | MIT | — | 语音+图+文三模态 |
-| 10 | Phi-4-Reasoning-Vision | 微软 | 15B | 2025-02 | MIT | — | 视觉CoT推理 |
-| 11 | LLaVA-CoT | PKU | 11B | 2025（ICCV） | **MIT** | 超越Gemini-1.5-pro | 视觉CoT |
-| 12 | DeepSeek-VL2 | DeepSeek | 3B~27B总 | **2024-12-13** | DeepSeek License | 61.3% | MoE性价比 |
-| 13 | Gemma 3 | Google | 1B~27B | 2025-03 | Gemma T&C ⚠️ | — | ⚠️静态 |
-| 14 | Pixtral 12B | Mistral AI | 12B | 2025-03 | Apache 2.0 | — | ⚠️静态 |
-| 15 | LLaVA-OneVision-1.5 | LLaVA-VL | 4B/8B | 2024-12 | MIT | — | ⚠️静态 |
-| 16 | MiniCPM-V 4.5 | OpenBMB | 8B | 2024-11 | BSD | — | ⚠️静态 |
+| 2 | **Qwen3.5-397B-A17B** 🆕 | 阿里巴巴 | 397B/17B激活 | 2026-02-16 | Qwen3.5 License | — | 原生多模态VLM，MoE，早期融合视觉-语言训练 |
+| 3 | **InternVL3.5-Flash** 🆕 | 上海AI Lab | 8B~78B | 2025-10-14 | Apache 2.0 | — | 快速版 |
+| 4 | InternVL3.5 | 上海AI Lab | 8B~78B | 2025-08-25 | **MIT** | 77.7% | 开源VLM综合最强 |
+| 5 | Qwen3-VL-235B-A22B | 阿里巴巴 | 235B/22B激活 | 2025-09-23 | Apache 2.0 | Pro: 78.7% | MoE，256K上下文 |
+| 6 | Qwen3-VL（通用） | 阿里巴巴 | 3B/8B/30B | 2025-09-23 | Tongyi Qianwen | — | 通用版 |
+| 7 | Qwen2.5-VL | 阿里巴巴 | 3B~72B | 2025-01 | Tongyi Qianwen | — | ⚠️静态 |
+| 8 | InternVL3 | 上海AI Lab | 1B~78B | 2025-04 | Apache 2.0 | — | ⚠️静态 |
+| 9 | **GLM-4.6V** 🆕 | 智谱AI | ~9B | **2025-12-08** | **Apache 2.0** | — | MathVista开源SOTA |
+| 10 | Phi-4-Multimodal | 微软 | 8B | 2025-02 | MIT | — | 语音+图+文三模态 |
+| 11 | Phi-4-Reasoning-Vision | 微软 | 15B | 2025-02 | MIT | — | 视觉CoT推理 |
+| 12 | LLaVA-CoT | PKU | 11B | 2025（ICCV） | **MIT** | 超越Gemini-1.5-pro | 视觉CoT |
+| 13 | DeepSeek-VL2 | DeepSeek | 3B~27B总 | **2024-12-13** | DeepSeek License | 61.3% | MoE性价比 |
+| 14 | Gemma 3 | Google | 1B~27B | 2025-03 | Gemma T&C ⚠️ | — | ⚠️静态 |
+| 15 | Pixtral 12B | Mistral AI | 12B | 2025-03 | Apache 2.0 | — | ⚠️静态 |
+| 16 | LLaVA-OneVision-1.5 | LLaVA-VL | 4B/8B | 2024-12 | MIT | — | ⚠️静态 |
+| 17 | MiniCPM-V 4.5 | OpenBMB | 8B | 2024-11 | BSD | — | ⚠️静态 |
 
 ---
 
