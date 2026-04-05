@@ -7,6 +7,15 @@
 
 ---
 
+## 四大职责（每次定时任务必须全部执行）
+
+1. **调研**：扫描 HuggingFace / ModelScope / 官方博客，发现新模型追加到 models.json
+2. **质检**：强制执行四步质检流程（P0 门禁 + 质检分析 + 反馈 + 跟踪改进）
+3. **文档归档**：从 models.json 同步所有文件，不得遗漏
+4. **GitHub 备份**：git add + commit + push
+
+---
+
 ## 工作流程
 
 ```
@@ -33,14 +42,28 @@ git add -A && git commit && git push origin main
 
 1. **所有文档必须从 models.json 生成**，不得手动编辑由脚本生成的区块
 2. **每次更新必须同时检查以下所有文件**，不得遗漏：
-   - OVERVIEW.md（模型列表）
+   - OVERVIEW.md（模型列表，分类计数一致性）
    - BENCHMARKS.md（Benchmark 数据）
+   - README.md（首页摘要 + 月度新发 + 选型推荐）
    - LICENSE_GUIDE.md（许可证信息）
-   - README.md（首页摘要）
    - 对应分类的模型卡
 3. **数字必须一致**：总模型数、开源数、闭源数、分类计数在任何文件中都必须完全一致
 4. **分类唯一性**：每个模型 id 只能出现在一个分类中
-5. **月度新发板块**：README.md 必须按月倒序展示
+5. **月度新发板块**：README.md 必须按月倒序展示（4月→3月→2月→更早）
+
+## 文档归档检查清单（每次必查）
+
+执行完成后逐项打勾：
+```
+[ ] docs/_data/models.json — 单一数据源已更新
+[ ] docs/OVERVIEW.md — 模型总数/开源/闭源计数与models.json一致
+[ ] docs/BENCHMARKS.md — Benchmark数据与models.json一致
+[ ] README.md — 月度新发板块已更新（按4月→3月→2月→更早排序）
+[ ] docs/LICENSE_GUIDE.md — 许可证信息已核查
+[ ] docs/models/*.md — 各分类模型卡已同步
+[ ] 所有文件 commit + push 完成
+[ ] 飞书通报已发送
+```
 
 ---
 
