@@ -1,70 +1,57 @@
-# 🔒 许可证与商用合规指南
+# 📜 许可证合规指南
 
-> 选型第一步：确认能否商用。本文档提供快速判断依据。
-
----
-
-## 快速判断流程
-
-```
-这个模型能商用吗？
-
-├─ 是否开源权重？
-│   ├─ YES → 看具体许可证
-│   └─ NO  → ❌ 通常不可商用（除非API平台授权）
-│
-├─ 许可证类型？
-    ├─ MIT / Apache 2.0 / BSD / DeepSeek License / Tongyi Qianwen
-    │   └─ ✅ 通常可商用（见具体条款）
-    │
-    ├─ Llama License
-    │   └─ ⚠️ 需申请（Meta官方授权）
-    │
-    ├─ CC BY-NC-SA（非商业+相同方式共享）
-    │   └─ ❌ 不可商用
-    │
-    └─ 专有模型（API调用）
-        └─ ⚠️ 仅API平台授权范围内可用
-```
+> 许可证核查 · 商用风险提示 · 来源：各模型官方 LICENSE 页面  
+> **数据截止**：2026-04-05
 
 ---
 
-## 许可证速查表
+## 主流许可证一览
 
-| 许可证 | 商用 | 代表模型 | 注意事项 |
-|--------|------|---------|---------|
-| **MIT** | ✅ | Kimi K2.5, GLM-5, MiniMax M2.5, Phi-4-Multimodal, InternVL3.5 | 无附加条件 |
-| **Apache 2.0** | ✅ | InternVL3.5, Mistral Small 3, Show-o2, CogVLM2-Video, Step-3.5-Flash | 无附加条件 |
-| **Tongyi Qianwen** | ✅ | Qwen3-VL, Qwen3-Omni, Qwen3.5系列, Qwen3-Coder-Next | 需遵守输出合规条款 |
-| **DeepSeek License** | ✅ | DeepSeek-R1, DeepSeek-V3, Janus-Pro | 需遵守使用政策 |
-| **BSD** | ✅ | MiniCPM-V 4.5 | 无附加条件 |
-| **Gemma Terms** | ⚠️ | Gemma 3 | 需阅读Google使用条款 |
-| **Llama License** | ⚠️需申请 | Llama 3.x | 需向Meta申请商业授权 |
-| **CC BY-NC-SA** | ❌ | SALMONN, video-SALMONN | 禁止商用 |
-| **NVIDIA Open** | ⚠️ | Cosmos-Reason2 | 需阅读NVIDIA条款 |
-| **🔒 专有** | ❌ | GLM-5V-Turbo, MiniMax M2.7 | 仅API授权范围内 |
+| 许可证 | 可商用 | 可修改 | 可分发 | 开源合规 | 代表模型 |
+|--------|--------|--------|--------|----------|---------|
+| **Apache 2.0** | ✅ | ✅ | ✅ | ✅ 完全开源 | GLM-5, InternVL3.5, Gemma 4 🆕 |
+| **MIT** | ✅ | ✅ | ✅ | ✅ 完全开源 | Kimi K2.5, MiniMax M2.5 |
+| **DeepSeek License** | ✅（需保留版权） | ✅ | ✅ | ✅ 基本自由 | DeepSeek-V3, DeepSeek-R1 |
+| **Qwen License** | ✅（需申请） | ⚠️ | ⚠️ | ⚠️ 部分限制 | Qwen3.5系列, Qwen3-VL |
+| **Llama License** | ⚠️（需向Meta申请） | ⚠️ | ❌ | ⚠️ 研究转商用 | Llama 3.3 |
+| **Proprietary** | ❌ | ❌ | ❌ | ❌ | GPT-5, Claude Opus 4.6, Gemini系列 |
 
 ---
 
-## 按场景选型（仅列可商用）
+## 完全开源可商用（Apache 2.0 / MIT）
 
-| 场景 | 推荐模型 | 许可证 |
-|------|---------|--------|
-| 商业产品集成 | Kimi K2.5, GLM-5, MiniMax M2.5 | MIT / Apache 2.0 |
-| 企业内部署 | InternVL3.5, Qwen3-VL, DeepSeek-V3 | Apache 2.0 / Tongyi Qianwen |
-| 学术研究 | 所有开源模型 | — |
-| 对外SaaS服务 | Kimi K2.5, GLM-5, MiniMax M2.5, Qwen3-Coder-Next | MIT / Apache 2.0 |
-| ❌ 不可商用 | SALMONN, Llama 3.x（未申请）| CC BY-NC-SA / Llama |
+> 无需申请，商用无忧
+
+| 模型 | 许可证 | 链接 |
+|------|--------|------|
+| **GLM-5** | MIT | [HF](https://huggingface.co/zai-org/GLM-5) |
+| **GLM-5.1** 🆕 | MIT | 权重2026-04-05后开源 |
+| **Kimi K2.5** | MIT | [HF](https://huggingface.co/moonshotai/Kimi-K2.5) |
+| **InternVL3.5** | MIT | [HF](https://huggingface.co/OpenGVLab/InternVL3_5-8B) |
+| **Gemma 4 31B** 🆕 | **Apache 2.0** | [HF](https://huggingface.co/google/gemma-4) |
+| **Gemma 4 26B-A4B** 🆕 | **Apache 2.0** | [HF](https://huggingface.co/google/gemma-4) |
+| **Gemma 4 E4B** 🆕 | **Apache 2.0** | [HF](https://huggingface.co/google/gemma-4) |
+| **Gemma 4 E2B** 🆕 | **Apache 2.0** | [HF](https://huggingface.co/google/gemma-4) |
+| **MiniMax M2.5** | Apache 2.0 | [HF](https://huggingface.co/blog/mlabonne/minimax-m25) |
+| **bge-m3** | Apache 2.0 | — |
+| **NV-Embed-v2** | NVIDIA（非商业默认） | — |
 
 ---
 
-## 商用合规注意事项
+## 需申请或有限制
 
-1. **API调用模式**（如 GLM-5V-Turbo、MiniMax M2.7）：仅在平台授权范围内使用，不可将模型权重用于商业产品
-2. **Llama License**：即使模型权重可下载，商用仍需向 Meta 单独申请授权
-3. **输出合规**：部分许可证（如 Tongyi Qianwen）要求遵守输出内容合规条款
-4. **数据隐私**：部署到自有服务器时，需确保输入数据处理符合所在地区法规
+| 模型 | 许可证 | 申请 | 注意事项 |
+|------|--------|------|---------|
+| **Qwen3.5系列** | Qwen License | 需申请 | 不可直接商用 |
+| **Qwen3-VL系列** | Apache 2.0 | — | 明确Apache 2.0 |
+| **Llama 3.3** | Llama License | 向Meta申请 | 仅限研究 |
 
 ---
 
-*本表基于2026年4月各模型官方许可证信息，实际情况请以各模型官方License文件为准。*
+## 闭源 API（不可私有化部署）
+
+GPT-5 / Claude Opus 4.6 / Claude Sonnet 4.6 / Gemini 3.1 Pro / Grok 4.20 / GPT-4o 等。
+
+---
+
+*数据截止：2026-04-05 · 请以官方 LICENSE 最新版本为准*
