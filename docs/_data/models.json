@@ -1052,18 +1052,17 @@
       "benchmarks": {},
       "pricing": "",
       "highlights": [
-        "119B MoE混合模型",
+        "119B MoE，128 experts，4 active，活跃约6.5B",
         "统一instruct+reasoning+coding多模态",
-        "Apache 2.0开源可商用",
-        "NVIDIA Build首发"
+        "KV rank 128，内存效率优于GLM-4.7-Flash"
       ],
       "use_cases": [
+        "本地部署（中等成本接近大模型质量）",
         "通用对话",
-        "代码生成",
-        "推理任务"
+        "代码生成"
       ],
-      "hf_url": "https://huggingface.co/mistralai/mistral-small-2603",
-      "notes": "2026-03-15发布，NVIDIA Build/HuggingFace同步上架；统一instruct/reasoning/coding"
+      "hf_url": "https://huggingface.co/mistralai/Mistral-Small-4-119B-2603",
+      "notes": "⚠️ P1-待补： Benchmark数据缺失（SWE-bench实测量73.1%，落后GLM-5的77.8%），未达到任何维度SOTA。需补充量化证据方可声称SOTA。当前列为'特色模型'而非SOTA模型。"
     },
     {
       "id": "glm-51",
