@@ -32,7 +32,6 @@
 | **Gemma 4 26B-A4B** 🆕 | **Apache 2.0** | [HF](https://huggingface.co/google/gemma-4) |
 | **Gemma 4 E4B** 🆕 | **Apache 2.0** | [HF](https://huggingface.co/google/gemma-4) |
 | **Gemma 4 E2B** 🆕 | **Apache 2.0** | [HF](https://huggingface.co/google/gemma-4) |
-| **Mistral Small 4** 🆕 | **Apache 2.0** | [HF](https://huggingface.co/mistralai/mistral-small-2603) |
 | **MiniMax M2.5** | Apache 2.0 | [HF](https://huggingface.co/blog/mlabonne/minimax-m25) |
 | **bge-m3** | Apache 2.0 | — |
 | **NV-Embed-v2** | NVIDIA（非商业默认） | — |

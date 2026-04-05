@@ -71,7 +71,6 @@
 ### 2026年3月
 | 模型 | 发布方 | 许可证 | 亮点 |
 |------|--------|--------|------|
-| **Mistral Small 4** 🆕 | Mistral AI | **Apache 2.0** | 119B MoE，统一instruct+reasoning+coding |
 | **GPT-5.4** 🆕 | OpenAI | 🔒专有 | 专业工作83%，最强旗舰 |
 | **GLM-5.1** 🆕 | 智谱AI/Z.ai | **MIT** | SWE-bench 77.8%（开源最高） |
 | **Gemini 3.1 Flash Live** | Google | 🔒专有 | 实时语音旗舰，<1s延迟 |

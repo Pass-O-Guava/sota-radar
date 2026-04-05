@@ -15,8 +15,8 @@
 | 🅱 开源 VLM | 13 | — | 13 |
 | 🎧 音频-语言模型 | 3 | 0 | 3 |
 | 🎬 视频理解模型 | 2 | 0 | 2 |
-| 🎨 图像生成模型 | 1 | 1 | 1 |
-| ⚡ 编程/推理专项 | 1 | 1 | 1 |
+| 🎨 图像生成模型 | 1 | 1 | 0 |
+| ⚡ 编程/推理专项 | 1 | 0 | 1 |
 | 🔮 多模态统一模型 | 2 | 0 | 2 |
 | 🔢 Embedding & Reranker | 4 | 1 | 3 |
 | **合计** | **50** | **14** | **36** |
@@ -49,7 +49,7 @@
 |---|------|--------|----------|--------|------|
 | 1 | **Qwen3.6-Plus**  | 阿里巴巴 | 2026-04-02 | tongyi_qianwen | 最新旗舰；1M上下文 |
 | 2 | **GLM-5.1** [HF](待确认（zai-org/GLM-5）) | 智谱AI/Z.ai | 2026-03-27 | mit | SWE-bench Verified 77.8%（开源最高）；LMArena Text/Code Arena双第一 |
-| 3 | **Mistral Small 4** [HF](https://huggingface.co/mistralai/mistral-small-2603) | Mistral AI | 2026-03-16 | apache_2 | 119B MoE混合模型；统一instruct+reasoning+coding多模态 |
+| 3 | **Mistral Small 4** [HF](https://huggingface.co/mistralai/Mistral-Small-4-119B-2603) | Mistral AI | 2026-03-16 | apache_2 | 119B MoE，128 experts，4 active，活跃约6.5B；统一instruct+reasoning+coding多模态 |
 | 4 | **Qwen3.5 系列** [HF](https://huggingface.co/Qwen/Qwen3.5) | 阿里巴巴 | 2026-02-24 | qwen35_license | 0.8B~35B全规格覆盖；MoE+稠密双路线 |
 | 5 | **GLM-5** [HF](https://huggingface.co/zai-org/GLM-5) | 智谱AI/Z.ai | 2026-02-11 | mit | MIT许可证开源；200K上下文 |
 | 6 | **Step-3.5-Flash** [HF](https://huggingface.co/stepfun-ai/Step-3.5-Flash) | StepFun AI | 2026-02-02 | unknown | 196B总参数稀疏MoE；极速推理 |

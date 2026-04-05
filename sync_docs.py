@@ -43,10 +43,10 @@ overview = f"""# 📋 SOTA Radar 完整模型列表（{today} 最终版）
 | 🅱 开源 VLM | {len(open_vlm)} | — | {len(open_vlm)} |
 | 🎧 音频-语言模型 | {len(alms)} | 0 | {len(alms)} |
 | 🎬 视频理解模型 | {len(videos)} | 0 | {len(videos)} |
-| 🎨 图像生成模型 | {len(imgs)} | {len([m for m in models if m['category']=='image_generation' and 'closed' not in m['category']])} | {len([m for m in models if m['category']=='image_generation' and 'closed' not in m['category']])} |
-| ⚡ 编程/推理专项 | {len(codes)} | {len([m for m in codes if m['category']=='code'])} | {len([m for m in codes if m['category']=='code'])} |
+| 🎨 图像生成模型 | {len(imgs)} | {len([m for m in models if m['category']=='image_generation' and m.get('license')=='proprietary'])} | {len([m for m in models if m['category']=='image_generation' and m.get('license')!='proprietary'])} |
+| ⚡ 编程/推理专项 | {len(codes)} | {len([m for m in codes if m.get('license')=='proprietary'])} | {len([m for m in codes if m.get('license')!='proprietary'])} |
 | 🔮 多模态统一模型 | {len(mmodal)} | 0 | {len(mmodal)} |
-| 🔢 Embedding & Reranker | {len(emb)} | {len([m for m in emb if m['category']=='embedding' and 'proprietary' in str(m.get('license','')).lower() or m.get('license','') == 'proprietary'])} | {len([m for m in emb if m.get('license','') != 'proprietary'])} |
+| 🔢 Embedding & Reranker | {len(emb)} | {len([m for m in emb if m.get('license')=='proprietary'])} | {len([m for m in emb if m.get('license')!='proprietary'])} |
 | **合计** | **{total}** | **{closed_total}** | **{open_total}** |
 
 ---
