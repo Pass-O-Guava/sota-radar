@@ -1,0 +1,43 @@
+{
+  "date": "2026-04-05",
+  "period": "初始化自审",
+  "models_added": 0,
+  "rejections": 2,
+  "rejection_reasons": [
+    "P0-2: Mistral Small 4 SOTA声明无Benchmark证据",
+    "P0-4: Qwen3.6-Plus 模态待核实无官方确认"
+  ],
+  "re_review_findings": [
+    {
+      "issue": "16个模型Benchmark数据缺失（占总数32%）",
+      "severity": "P1",
+      "root_cause": "SKILL.md必填字段'Benchmark数据'未被执行入库，大量模型'benchmarks'字段为空",
+      "affected_models": ["Gemini 3.1 Flash Live","Qwen3.5 系列","Step-3.5-Flash","Qwen2.5 系列","Llama 3.3"],
+      "skill_violation": "调研员提交时自检清单未检查'Benchmark数据'字段是否为空",
+      "fix_required": "SKILL.md必填字段中'Benchmark数据'必须非空；自检清单新增'有无可用Benchmark数据'"
+    },
+    {
+      "issue": "2个模型许可证待确认仍入库",
+      "severity": "P0",
+      "root_cause": "Step-3.5-Flash和SenseNova-MARS许可证为unknown，违反了P0-3门禁，仍被入库",
+      "affected_models": ["Step-3.5-Flash","SenseNova-MARS"],
+      "skill_violation": "P0-3：许可证必须有官方页面可查，unknown=未核实，不得入库",
+      "fix_required": "P0-3严格执行：license='unknown'的模型必须先核实才能入库，不得标注为'待确认'后入库"
+    },
+    {
+      "issue": "Mistral Small 4 SOTA声明无量化证据",
+      "severity": "P0",
+      "root_cause": "见Mistral Small 4案例，已更正为'特色模型待补'",
+      "affected_models": ["Mistral Small 4"],
+      "skill_violation": "P0-2：SOTA声明必须有Benchmark分数+来源，无数据不得声称SOTA",
+      "fix_required": "案例已沉淀至SKILL.md常见错误中"
+    }
+  ],
+  "skill_updates_made": true,
+  "updates": [
+    "在SOTA Greedy Research SKILL.md必填字段中强调'Benchmark数据'不得为空"
+  ],
+  "pass_rate_this_run": "68%（34/50模型完全合规，16个缺Benchmark，2个许可证未知）",
+  "p0拦截率": "2/50 = 4%（已入库但存在P0问题）",
+  "top_failure_type": "Benchmark数据缺失（16个）"
+}
