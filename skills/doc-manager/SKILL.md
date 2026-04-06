@@ -102,6 +102,29 @@ git add -A && git commit && git push origin main
 
 ---
 
+## 自审Skill（每次定时任务第五步）
+
+每次任务完成后，读取本次 commit 历史 + models.json 变更，识别失误类型，对照本 SKILL.md 核查是否有漏洞，如有则更新本文件并 commit。
+
+**自审核查清单：**
+```
+[ ] 本次 commit 是否成功推送？
+[ ] 新增模型字段完整性检查（id/name/developer/category/release_date/license/benchmarks/highlights/use_cases/hf_url/notes）
+[ ] 分类一致性：总模型数与 OVERVIEW.md 一致？
+[ ] 许可证待确认项是否已标注 notes？
+[ ] 是否有待入库候选模型被错误拒绝/遗漏？
+[ ] SKILL.md 是否需要更新（如发现新漏洞/缺失流程）？
+```
+
+**发现漏洞时的处理：**
+- 立即更新本 SKILL.md（添加规则/修正流程）
+- 在 commit message 中标注 `[自审修复]`
+- 在飞书通报中列入【进化决策】条目
+
+**Voxtral TTS 自审发现（2026-04-06）：**
+- ✅ 字段完整性：全部通过
+- ⚠️ 许可证跟踪：Mistral TTS 系列许可证需专项跟进（建议 LICENSE_GUIDE.md 补充 `mistral_license` 映射：可商用但需确认商业条款）
+
 ## 输出要求
 
 执行完成后，在飞书发送报告：
