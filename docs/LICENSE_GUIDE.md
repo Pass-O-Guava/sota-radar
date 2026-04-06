@@ -1,7 +1,7 @@
 # 📜 许可证合规指南
 
 > 许可证核查 · 商用风险提示 · 来源：各模型官方 LICENSE 页面  
-> **数据截止**：2026-04-05
+> **数据截止**：2026-04-06
 
 ---
 
@@ -25,7 +25,7 @@
 | 模型 | 许可证 | 链接 |
 |------|--------|------|
 | **GLM-5** | MIT | [HF](https://huggingface.co/zai-org/GLM-5) |
-| **GLM-5.1** 🆕 | MIT | 权重2026-04-05后开源 |
+| **GLM-5.1** 🆕 | MIT | 权重2026-04-06后开源 |
 | **Kimi K2.5** | MIT | [HF](https://huggingface.co/moonshotai/Kimi-K2.5) |
 | **InternVL3.5** | MIT | [HF](https://huggingface.co/OpenGVLab/InternVL3_5-8B) |
 | **Gemma 4 31B** 🆕 | **Apache 2.0** | [HF](https://huggingface.co/google/gemma-4) |
@@ -54,4 +54,4 @@ GPT-5 / Claude Opus 4.6 / Claude Sonnet 4.6 / Gemini 3.1 Pro / Grok 4.20 / GPT-4
 
 ---
 
-*数据截止：2026-04-05 · 请以官方 LICENSE 最新版本为准*
+*数据截止：2026-04-06 · 请以官方 LICENSE 最新版本为准*
