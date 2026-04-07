@@ -274,27 +274,6 @@
       "notes": "中国大厂首个MIT许可证开源Frontier级模型"
     },
     {
-      "id": "qwen35-series",
-      "name": "Qwen3.5 系列",
-      "developer": "阿里巴巴",
-      "category": "open_llm",
-      "release_date": "2026-02-24",
-      "license": "qwen35_license",
-      "context_window": "128K",
-      "benchmarks": {},
-      "pricing": "",
-      "highlights": [
-        "0.8B~35B全规格覆盖",
-        "MoE+稠密双路线"
-      ],
-      "use_cases": [
-        "通用对话",
-        "本地部署"
-      ],
-      "hf_url": "https://huggingface.co/Qwen/Qwen3.5",
-      "notes": "小模型(0.8B~3B)为纯文本，无视觉编码器"
-    },
-    {
       "id": "step-35-flash",
       "name": "Step-3.5-Flash",
       "developer": "StepFun AI",
@@ -312,7 +291,7 @@
         "快速响应任务"
       ],
       "hf_url": "https://huggingface.co/stepfun-ai/Step-3.5-Flash",
-      "notes": "许可证待确认"
+      "notes": "许可证待确认 | ⚠️P0-6拦截：license=unknown，需确认前不得标注可商用。"
     },
     {
       "id": "deepseek-v3",
@@ -366,25 +345,6 @@
       ],
       "hf_url": "https://huggingface.co/deepseek-ai/DeepSeek-R1",
       "notes": "R1-0528更新：2025-05 |"
-    },
-    {
-      "id": "qwen25-series",
-      "name": "Qwen2.5 系列",
-      "developer": "阿里巴巴",
-      "category": "closed_llm",
-      "release_date": "2024-09",
-      "license": "tongyi_qianwen",
-      "benchmarks": {},
-      "pricing": "",
-      "highlights": [
-        "0.5B~72B全规格",
-        "历史版本"
-      ],
-      "use_cases": [
-        "通用对话"
-      ],
-      "hf_url": "https://huggingface.co/Qwen/Qwen2.5",
-      "notes": "⚠️静态，19个月无更新 | 【更正-2026-04-07】tongyi_qianwen License 为闭源许可，移至 closed_llm 类。"
     },
     {
       "id": "llama-33",
@@ -509,7 +469,7 @@
       "id": "minimax-m25",
       "name": "MiniMax M2.5",
       "developer": "MiniMax",
-      "category": "open_vlm",
+      "category": "open_llm",
       "release_date": "2026-02-12",
       "license": "MIT",
       "benchmarks": {
