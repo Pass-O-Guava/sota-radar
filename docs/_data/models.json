@@ -1,6 +1,6 @@
 {
   "_comment": "SOTA Radar 单一数据源 - 所有文档从这个文件生成",
-  "_last_updated": "2026-04-06",
+  "_last_updated": "2026-04-07",
   "_updated_by": "SOTA Radar Cron (下午更新 13:30 UTC+8)",
   "models": [
     {
@@ -511,7 +511,7 @@
       "developer": "MiniMax",
       "category": "open_vlm",
       "release_date": "2026-02-12",
-      "license": "apache_2",
+      "license": "MIT",
       "benchmarks": {
         "swe_bench": "80.2%"
       },
@@ -526,8 +526,35 @@
         "编程任务",
         "Agent工作流"
       ],
-      "hf_url": "https://huggingface.co/blog/mlabonne/minimax-m25",
-      "notes": "官方确认：原生多模态模型"
+      "hf_url": "https://huggingface.co/ai/MiniMax-M2.5",
+      "notes": "官方确认：原生多模态模型 | 【更正-2026-04-07】许可证由Apache 2.0更正为Modified MIT（需署名）；M2.7已于2026-03-18发布，M2.5移入历史版本。"
+    },
+    {
+      "id": "minimax-m27",
+      "name": "MiniMax M2.7",
+      "developer": "MiniMax",
+      "category": "closed_llm",
+      "release_date": "2026-03-18",
+      "license": "proprietary",
+      "context_window": "1M",
+      "benchmarks": {
+        "mm_claw": "62.7%",
+        "swe_pro": "56.22%",
+        "vals_index": "59.58%"
+      },
+      "pricing": "API: $0.2~2/M tokens（根据上下文长度分档）",
+      "highlights": [
+        "首个自我进化AI模型（Self-Evolution）：模型分析自身失败并修改训练框架",
+        "SWE-Pro 56.22%，接近Claude Opus 4.6水平",
+        "2048 GPU集群训练，203人团队实现对3000人Anthropic的追赶"
+      ],
+      "use_cases": [
+        "复杂Agent构建",
+        "端到端项目级编码",
+        "自主学习迭代"
+      ],
+      "hf_url": "",
+      "notes": "【新增-2026-04-07】MiniMax M2.7为闭源模型（非开源），通过MiniMax API调用。自我进化技术为行业首创。"
     },
     {
       "id": "internvl35",
