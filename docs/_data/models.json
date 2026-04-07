@@ -274,26 +274,6 @@
       "notes": "中国大厂首个MIT许可证开源Frontier级模型"
     },
     {
-      "id": "step-35-flash",
-      "name": "Step-3.5-Flash",
-      "developer": "StepFun AI",
-      "category": "open_llm",
-      "release_date": "2026-02-02",
-      "license": "unknown",
-      "benchmarks": {},
-      "pricing": "",
-      "highlights": [
-        "196B总参数稀疏MoE",
-        "极速推理"
-      ],
-      "use_cases": [
-        "Agent",
-        "快速响应任务"
-      ],
-      "hf_url": "https://huggingface.co/stepfun-ai/Step-3.5-Flash",
-      "notes": "许可证待确认 | ⚠️P0-6拦截：license=unknown，需确认前不得标注可商用。"
-    },
-    {
       "id": "deepseek-v3",
       "name": "DeepSeek-V3",
       "developer": "DeepSeek",
@@ -1823,5 +1803,6 @@
       ],
       "hf_url": "https://huggingface.co/Qwen/Qwen3-TTS"
     }
-  ]
+  ],
+  "_curated": true
 }
