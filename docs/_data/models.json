@@ -1,6 +1,6 @@
 {
   "_comment": "SOTA Radar 单一数据源 - 所有文档从这个文件生成",
-  "_last_updated": "2026-04-07",
+  "_last_updated": "2026-04-08",
   "_updated_by": "SOTA Radar Cron (下午更新 13:30 UTC+8)",
   "models": [
     {
@@ -1244,6 +1244,584 @@
       ],
       "hf_url": "https://huggingface.co/mistralai/Voxtral-TTS",
       "notes": "Mistral首个TTS开源模型；Apache 2.0/Mistral License待确认"
+    },
+    {
+      "id": "chronos-2",
+      "name": "Chronos-2",
+      "developer": "Amazon Science",
+      "category": "time_series",
+      "release_date": "2025-10-20",
+      "license": "apache_2",
+      "benchmarks": {
+        "gift_eval": "SOTA",
+        "fev_bench": "超越TimesFM-2.5和TiRex"
+      },
+      "highlights": [
+        "120M参数，零样本时序预测",
+        "金融/能源/零售/气象通用"
+      ],
+      "hf_url": "https://github.com/amazon-science/chronos-forecasting"
+    },
+    {
+      "id": "timesfm-25",
+      "name": "TimesFM-2.5",
+      "developer": "Google DeepMind",
+      "category": "time_series",
+      "release_date": "2025-09-15",
+      "license": "apache_2",
+      "benchmarks": {
+        "context": "16k",
+        "quantile": "最高1k horizons"
+      },
+      "highlights": [
+        "200M参数（从500M压缩）",
+        "零样本时序预测基准"
+      ],
+      "hf_url": "https://github.com/google-research/timesfm"
+    },
+    {
+      "id": "moirai-2",
+      "name": "MOIRAI-2",
+      "developer": "Salesforce AI Research",
+      "category": "time_series",
+      "release_date": "2025-08-15",
+      "license": "apache_2",
+      "benchmarks": {
+        "gift_eval": "排名第一"
+      },
+      "highlights": [
+        "解码器-only通用时序Transformer",
+        "GIFT-Eval第一"
+      ],
+      "hf_url": "https://github.com/SalesforceAIResearch/uni2ts"
+    },
+    {
+      "id": "timegpt-1",
+      "name": "TimeGPT-1",
+      "developer": "Nixtla",
+      "category": "time_series",
+      "release_date": "2023-10-05",
+      "license": "commercial",
+      "benchmarks": {
+        "zero_shot": "超越ARIMA等传统方法"
+      },
+      "highlights": [
+        "首个时序基础模型",
+        "300K+序列零样本验证"
+      ],
+      "hf_url": "https://nixtla.io/docs/introduction/about_timegpt"
+    },
+    {
+      "id": "chronos-bolt",
+      "name": "Chronos-Bolt",
+      "developer": "Amazon Science",
+      "category": "time_series",
+      "release_date": "2024-12-02",
+      "license": "apache_2",
+      "benchmarks": {
+        "speed": "比原始Chronos快250倍"
+      },
+      "highlights": [
+        "零样本极速预测",
+        "集成AutoGluon-TimeSeries"
+      ],
+      "hf_url": "https://aws.amazon.com/blogs/machine-learning/fast-and-accurate-zero-shot-forecasting-with-chronos-bolt-and-autogluon/"
+    },
+    {
+      "id": "paddleocr-vl-15",
+      "name": "PaddleOCR-VL 1.5",
+      "developer": "PaddlePaddle（百度）",
+      "category": "ocr_document",
+      "release_date": "2026-01-29",
+      "license": "apache_2",
+      "benchmarks": {
+        "omnidocbench_v15": "94.5%总体准确率"
+      },
+      "highlights": [
+        "OmniDocBench v1.5第一",
+        "94.5%准确率开源最强OCR"
+      ],
+      "hf_url": "https://github.com/PaddlePaddle/PaddleOCR"
+    },
+    {
+      "id": "mistral-ocr-3",
+      "name": "Mistral OCR 3",
+      "developer": "Mistral AI",
+      "category": "ocr_document",
+      "release_date": "2025-12-18",
+      "license": "proprietary",
+      "benchmarks": {
+        "accuracy": "94.89%",
+        "key_areas": "96.7%"
+      },
+      "highlights": [
+        "94.89%准确率",
+        "超越Google Document AI"
+      ],
+      "hf_url": "https://mistral.ai/news/mistral-ocr-3"
+    },
+    {
+      "id": "olmodr-2",
+      "name": "olmOCR 2",
+      "developer": "Allen Institute for AI（Ai2）",
+      "category": "ocr_document",
+      "release_date": "2025-10-22",
+      "license": "apache_2",
+      "benchmarks": {
+        "olmodr_bench": "82.4分",
+        "tables": "+12pts",
+        "multi_col": "+6pts"
+      },
+      "highlights": [
+        "82.4分olmOCR-Bench",
+        "基于Qwen2.5-VL-7B开源"
+      ],
+      "hf_url": "https://allenai.org/blog/olmocr-2"
+    },
+    {
+      "id": "voyage-4-large",
+      "name": "voyage-4-large",
+      "developer": "Voyage AI（MongoDB）",
+      "category": "embedding",
+      "release_date": "2026-01-15",
+      "license": "commercial",
+      "benchmarks": {
+        "rteb": "第一",
+        "mteb": "超越voyage-3-large"
+      },
+      "highlights": [
+        "行业首个共享嵌入空间+MoE架构",
+        "RTEB第一"
+      ],
+      "hf_url": "https://blog.voyageai.com/2026/01/15/voyage-4/"
+    },
+    {
+      "id": "cohere-embed-v4",
+      "name": "Cohere embed-v4",
+      "developer": "Cohere AI",
+      "category": "embedding",
+      "release_date": "2024-11",
+      "license": "commercial",
+      "benchmarks": {
+        "mteb": "65.2",
+        "languages": "100+"
+      },
+      "highlights": [
+        "MTEB 65.2",
+        "多模态嵌入支持文本和图像"
+      ],
+      "hf_url": "https://cohere.com/rerank"
+    },
+    {
+      "id": "jina-embeddings-v3",
+      "name": "jina-embeddings-v3",
+      "developer": "Jina AI",
+      "category": "embedding",
+      "release_date": "2024-09-18",
+      "license": "cc_by_nc_nd",
+      "benchmarks": {
+        "mteb": "65.52"
+      },
+      "highlights": [
+        "MTEB 65.52开源",
+        "Task LoRA技术",
+        "570M参数"
+      ],
+      "hf_url": "https://jina.ai/models/jina-embeddings-v3/"
+    },
+    {
+      "id": "jina-reranker-v3",
+      "name": "jina-reranker-v3",
+      "developer": "Jina AI",
+      "category": "reranker",
+      "release_date": "2025-10-01",
+      "license": "cc_by_nc_nd",
+      "benchmarks": {
+        "beir_ndcg": "61.94"
+      },
+      "highlights": [
+        "BEIR nDCG@10 61.94",
+        "0.6B参数",
+        "131k上下文"
+      ],
+      "hf_url": "https://jina.ai/models/jina-reranker-v3/"
+    },
+    {
+      "id": "cohere-rerank-4",
+      "name": "Cohere Rerank 4.0",
+      "developer": "Cohere AI",
+      "category": "reranker",
+      "release_date": "2025-12-11",
+      "license": "commercial",
+      "benchmarks": {
+        "context_expansion": "4倍",
+        "languages": "100+"
+      },
+      "highlights": [
+        "上下文扩展4倍",
+        "企业级RAG精排"
+      ],
+      "hf_url": "https://docs.cohere.com/changelog/rerank-v4.0"
+    },
+    {
+      "id": "marble-world-model",
+      "name": "Marble",
+      "developer": "World Labs（李飞飞）",
+      "category": "world_model",
+      "release_date": "2025-11-12",
+      "license": "proprietary",
+      "benchmarks": {},
+      "highlights": [
+        "首个可交互3D世界模型",
+        "李飞飞创办",
+        "文本/图像输入生成可探索3D环境"
+      ],
+      "hf_url": "https://www.worldlabs.ai/blog/marble-world-model"
+    },
+    {
+      "id": "qwen35-omni",
+      "name": "Qwen3.5-Omni",
+      "developer": "阿里巴巴",
+      "category": "world_model",
+      "release_date": "2026-03-30",
+      "license": "proprietary",
+      "benchmarks": {
+        "audio_benchmark": "215个音频/视频基准SOTA"
+      },
+      "highlights": [
+        "Qwen3.5-Omni：2026-03-30发布，超越Gemini 3.1 Pro",
+        "113语言支持；原生端到端多模态",
+        "可处理超10小时音频、400秒720P视频"
+      ],
+      "use_cases": [
+        "全模态Agent",
+        "实时语音视频交互",
+        "多语言OCR"
+      ],
+      "hf_url": "https://qwen.ai/blog?id=qwen3.5-omni"
+    },
+    {
+      "id": "runway-gen-45",
+      "name": "Runway Gen-4.5",
+      "developer": "Runway",
+      "category": "video",
+      "release_date": "2025-12-01",
+      "license": "proprietary",
+      "benchmarks": {
+        "elo": "1247（AA T2V第一）"
+      },
+      "highlights": [
+        "Artificial Analysis T2V第一（ELO 1247）",
+        "超越Veo 3.1和Sora 2"
+      ],
+      "hf_url": "https://runwayml.com/research/introducing-runway-gen-4.5"
+    },
+    {
+      "id": "veo-31",
+      "name": "Veo 3.1",
+      "developer": "Google DeepMind",
+      "category": "video",
+      "release_date": "2025-10-01",
+      "license": "proprietary",
+      "benchmarks": {
+        "siliconflow_elo": "1386"
+      },
+      "highlights": [
+        "SiliconFlow T2V Arena第二（ELO 1386）",
+        "原生4K视频生成"
+      ],
+      "hf_url": "https://deepmind.google/models/veo/"
+    },
+    {
+      "id": "sora-2",
+      "name": "Sora 2",
+      "developer": "OpenAI",
+      "category": "video",
+      "release_date": "2025-09-30",
+      "license": "proprietary",
+      "benchmarks": {},
+      "highlights": [
+        "OpenAI旗舰视频生成",
+        "同步语音+音效生成"
+      ],
+      "hf_url": "https://openai.com/index/sora-2/"
+    },
+    {
+      "id": "kling-30",
+      "name": "Kling 3.0",
+      "developer": "快手",
+      "category": "video",
+      "release_date": "2026-02-05",
+      "license": "proprietary",
+      "benchmarks": {
+        "duration": "最长15秒",
+        "resolution": "原生4K"
+      },
+      "highlights": [
+        "快手Kling 3.0：原生4K，最长15秒",
+        "音频同步生成"
+      ],
+      "hf_url": "https://kling.ai/release-note/release-notes/whbvu8hsip"
+    },
+    {
+      "id": "seedance-20",
+      "name": "Seedance 2.0",
+      "developer": "字节跳动",
+      "category": "video",
+      "release_date": "2026-02-12",
+      "license": "proprietary",
+      "benchmarks": {
+        "elo": "1219（AA T2V with audio第一）"
+      },
+      "highlights": [
+        "字节Seedance 2.0：AA T2V with audio第一（ELO 1219）",
+        "统一音视频联合生成"
+      ],
+      "hf_url": "https://seed.bytedance.com/en/blog/official-launch-of-seedance-2-0"
+    },
+    {
+      "id": "midjourney-v7",
+      "name": "Midjourney v7",
+      "developer": "Midjourney",
+      "category": "image_generation",
+      "release_date": "2025-04-01",
+      "license": "proprietary",
+      "benchmarks": {
+        "arena": "Artificial Analysis Image Arena第一"
+      },
+      "highlights": [
+        "Artificial Analysis图生Arena持续霸榜",
+        "2025年图像生成标杆"
+      ],
+      "hf_url": "https://www.midjourney.com"
+    },
+    {
+      "id": "gpt-image-1",
+      "name": "GPT Image 1",
+      "developer": "OpenAI",
+      "category": "image_generation",
+      "release_date": "2025-12-16",
+      "license": "proprietary",
+      "benchmarks": {
+        "mmmup_pro": "81.2%",
+        "image_arena": "Q4 2025第一"
+      },
+      "highlights": [
+        "MMMU-Pro 81.2%",
+        "Image Arena 2025Q4第一"
+      ],
+      "hf_url": "https://developers.openai.com/api/docs/models/gpt-image-1"
+    },
+    {
+      "id": "canary-qwen-25b",
+      "name": "NVIDIA Canary-Qwen-2.5B",
+      "developer": "NVIDIA (NeMo)",
+      "category": "alm",
+      "release_date": "2025-07-17",
+      "license": "cc_by_nc_sa",
+      "benchmarks": {
+        "wer": "5.63%（开源ASR最强）",
+        "rtfx": "418×实时"
+      },
+      "highlights": [
+        "HuggingFace OpenASR第1名",
+        "5.63% WER",
+        "支持多语言ASR"
+      ],
+      "hf_url": "https://huggingface.co/nvidia/canary-qwen-2.5b"
+    },
+    {
+      "id": "whisper-large-v3",
+      "name": "Whisper Large v3",
+      "developer": "OpenAI",
+      "category": "alm",
+      "release_date": "2023-11-06",
+      "license": "apache_2",
+      "benchmarks": {
+        "wer": "比v2降低10-20%"
+      },
+      "highlights": [
+        "开源最广泛使用ASR",
+        "100+语言支持"
+      ],
+      "hf_url": "https://github.com/openai/whisper"
+    },
+    {
+      "id": "gpt-4o-transcribe",
+      "name": "GPT-4o Transcribe",
+      "developer": "OpenAI",
+      "category": "alm",
+      "release_date": "2025-03-31",
+      "license": "proprietary",
+      "benchmarks": {
+        "wer": "优于Whisper v2"
+      },
+      "highlights": [
+        "GPT-4o同款ASR",
+        "强口音和噪声环境"
+      ],
+      "hf_url": "https://platform.openai.com/docs/guides/speech-to-text"
+    },
+    {
+      "id": "granite-speech-33-8b",
+      "name": "IBM Granite Speech 3.3 8B",
+      "developer": "IBM Research",
+      "category": "alm",
+      "release_date": "2025-03-24",
+      "license": "apache_2",
+      "benchmarks": {
+        "open_asr": "开源模型第1名"
+      },
+      "highlights": [
+        "HuggingFace开源ASR第1名",
+        "企业级STT"
+      ],
+      "hf_url": "https://huggingface.co/ibm-granite/granite-speech-3.3-8b"
+    },
+    {
+      "id": "parakeet-tdt-06b-v2",
+      "name": "NVIDIA Parakeet TDT 0.6B v2",
+      "developer": "NVIDIA (NeMo)",
+      "category": "alm",
+      "release_date": "2025-06-04",
+      "license": "nvidia",
+      "benchmarks": {
+        "wer": "6.05% WER（行业领先）"
+      },
+      "highlights": [
+        "6.05% WER",
+        "流式实时转录"
+      ],
+      "hf_url": "https://developer.nvidia.com/blog/nvidia-speech-ai-models-deliver-industry-leading-accuracy-and-performance/"
+    },
+    {
+      "id": "pyannote-31",
+      "name": "Pyannote 3.1",
+      "developer": "Hervé Bredin",
+      "category": "alm",
+      "release_date": "2025-11-29",
+      "license": "cc_by_nc_sa",
+      "benchmarks": {
+        "der": "约11-19%（标准场景）"
+      },
+      "highlights": [
+        "开源说话人分离标杆",
+        "2+说话人场景"
+      ],
+      "hf_url": "https://huggingface.co/pyannote/speaker-diarization-3.1"
+    },
+    {
+      "id": "nemo-sortformer-v2",
+      "name": "NVIDIA NeMo Sortformer v2",
+      "developer": "NVIDIA",
+      "category": "alm",
+      "release_date": "2025-07-24",
+      "license": "nvidia",
+      "benchmarks": {
+        "streaming": "4人以上流式处理"
+      },
+      "highlights": [
+        "4人以上说话人流式分离",
+        "ONNX/Rust高性能"
+      ],
+      "hf_url": "https://huggingface.co/nvidia/diar_streaming_sortformer_4spk-v2.1"
+    },
+    {
+      "id": "vibevoice-asr",
+      "name": "Microsoft VibeVoice-ASR",
+      "developer": "Microsoft Research",
+      "category": "alm",
+      "release_date": "2026-01-14",
+      "license": "proprietary",
+      "benchmarks": {
+        "duration": "60分钟单遍处理"
+      },
+      "highlights": [
+        "Azure AI Foundry独家",
+        "60分钟长音频全流程"
+      ],
+      "hf_url": "https://techcommunity.microsoft.com/blog/azure-ai-foundry-blog/now-in-foundry-vibevoice-asr-minimax-m2-5-qwen3-5-9b/4500475"
+    },
+    {
+      "id": "assemblyai-diarization",
+      "name": "AssemblyAI Diarization",
+      "developer": "AssemblyAI",
+      "category": "alm",
+      "release_date": "2025-02-10",
+      "license": "proprietary",
+      "benchmarks": {
+        "der": "SDBench优秀"
+      },
+      "highlights": [
+        "云端说话人分离API",
+        "DER性能突出"
+      ],
+      "hf_url": "https://www.assemblyai.com/blog/top-speaker-diarization-libraries-and-apis"
+    },
+    {
+      "id": "fish-audio-s2-pro",
+      "name": "Fish Audio S2 Pro",
+      "developer": "Fish Audio",
+      "category": "alm",
+      "release_date": "2026-03-09",
+      "license": "apache_2",
+      "benchmarks": {
+        "tts_arena": "TTS-Arena2综合第1"
+      },
+      "highlights": [
+        "TTS-Arena2第1（BT得分3.07）",
+        "80+语言",
+        "Apache 2.0开源"
+      ],
+      "hf_url": "https://huggingface.co/fishaudio/s2-pro"
+    },
+    {
+      "id": "sesame-csm-1b",
+      "name": "Sesame CSM-1B",
+      "developer": "Sesame AI Labs",
+      "category": "alm",
+      "release_date": "2025-03-13",
+      "license": "apache_2",
+      "benchmarks": {},
+      "highlights": [
+        "对话语音生成模型",
+        "端到端多模态文本+语音"
+      ],
+      "hf_url": "https://huggingface.co/sesame/csm-1b"
+    },
+    {
+      "id": "kokoro-82m",
+      "name": "Kokoro-82M",
+      "developer": "Community",
+      "category": "alm",
+      "release_date": "2025-01-14",
+      "license": "mit",
+      "benchmarks": {
+        "hts_leaderboard": "HuggingFace TTS第1名"
+      },
+      "highlights": [
+        "仅82M参数却顶级质量",
+        "HuggingFace TTS第1",
+        "MIT轻量开源"
+      ],
+      "hf_url": "https://huggingface.co/hexgrad/Kokoro-82M"
+    },
+    {
+      "id": "qwen3-tts",
+      "name": "Qwen3-TTS",
+      "developer": "阿里巴巴",
+      "category": "alm",
+      "release_date": "2026-01-01",
+      "license": "apache_2",
+      "benchmarks": {
+        "adoption": "最广泛使用开源TTS之一"
+      },
+      "highlights": [
+        "Apache 2.0开源TTS",
+        "0.6B/1.7B双规格",
+        "<150ms延迟"
+      ],
+      "hf_url": "https://huggingface.co/Qwen/Qwen3-TTS"
     }
   ]
 }
