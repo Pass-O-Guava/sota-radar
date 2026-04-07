@@ -123,6 +123,10 @@
    - 某模型被新模型全面超越 → 标注"⚠️非SOTA"
    - 某模型链接失效 → 立即下架
    - 某模型许可证变更 → 更新记录并通报
+4. **增量版本扫描（重要！2026-04-07 新增）**：
+   - 对每个已入库模型，核查该系列是否有更新版本已发布
+   - 重点系列：MiniMax / GLM / Qwen / Claude / GPT / DeepSeek（按发布频率高优先）
+   - 发现新版本后 → 标注旧版为「历史版本」，新增条目，并通知调研团队补录详情
 
 ---
 
@@ -136,23 +140,23 @@
 
 **闭源模型（禁止归入开源类）**：
 - Tongyi Qianwen License（Tongyi License）→ **闭源 API 许可**
-- DeepSeek License → **需核查条款**（DeepSeek-V3/R1 官方以 License 名称发布，≠ Apache 2.0）
 - NVIDIA License → **闭源，需申请才可商用**
 - Proprietary / Custom → **绝对闭源**
 - HuggingFace 有模型页 ≠ 开源（部分闭源模型也托管在 HuggingFace）
 
 **禁止规则（2026-04-07 硬性新增）**：
 - ❌ 不得仅凭"HuggingFace 有页"就将模型归入开源
-- ❌ 不得将 Tongyi Qianwen License、DeepSeek License、NVIDIA License 归入开源
+- ❌ 不得将 Tongyi Qianwen License、NVIDIA License 归入开源
 - ❌ 不得将「可商用」等同于「开源」——可商用 + 不可下载权重 = 闭源
+- ✅ **DeepSeek License：需核查**——DeepSeek-V3/R1 官方提供可下载权重，实际为开源；其他模型需单独核实
 
-**已发现错误入库案例（2026-04-07）**：
-| 模型 | 原错误分类 | 正确分类 |
-|------|---------|---------|
-| Qwen3.6-Plus | open_llm（tongyi_qianwen） | closed_llm |
-| DeepSeek-V3 | open_llm（deepseek_license） | closed_llm |
-| DeepSeek-R1 | open_llm（deepseek_license） | closed_llm |
-| Qwen2.5 系列 | open_llm（tongyi_qianwen） | closed_llm（历史版本） |
+**已发现错误入库案例（2026-04-07 已部分修正）**：
+| 模型 | 原错误分类 | 正确分类 | 状态 |
+|------|---------|---------|------|
+| Qwen3.6-Plus | open_llm（tongyi_qianwen） | closed_llm | ✅ 已修正 |
+| DeepSeek-V3 | 误标为 closed_llm | **open_llm** | ✅ 已回退（WY 指出错误） |
+| DeepSeek-R1 | 误标为 closed_llm | **open_llm** | ✅ 已回退（WY 指出错误） |
+| Qwen2.5 系列 | open_llm（tongyi_qianwen） | closed_llm | ✅ 已修正 |
 
 ---
 
@@ -173,12 +177,10 @@
 | 错误项 | 正确做法 |
 |--------|---------|
 | 调研员报告：Tongyi Qianwen License = 开源 | ❌ 错误：Tongyi License 是闭源 API 许可 |
-| 调研员报告：DeepSeek License = 开源 | ❌ 错误：DeepSeek License ≠ Apache 2.0 |
-| 调研员报告：HuggingFace 有页 = 开源 | ❌ 错误：闭源模型（如 Llama 3.1 未发布前）也托管在 HuggingFace |
-| 质检员处理 | ✅ 已更正：models.json 中相关条目修正 |
-| 根因 | 混淆了「可商用」与「开源」两个不同概念 |
-
-**教训**：开源的定义是「可下载权重 + permissive 许可证（Apache 2.0/MIT/BSD）」，不是「可商用」。
+| PM错误报告：DeepSeek License = 闭源 | ❌ 错误：DeepSeek-V3/R1 权重可公开下载，实际为开源 |
+| 调研员报告：HuggingFace 有页 = 开源 | ❌ 错误：闭源模型也托管在 HuggingFace |
+| 质检员处理 | ✅ Qwen3.6-Plus/Qwen2.5 → closed_llm；DeepSeek-V3/R1 → 回退 open_llm |
+| 根因 | 误将「定制许可名称」当作「闭源」标准，正确的唯一标准是：权重是否可公开下载 |
 
 | 错误项 | 正确做法 |
 |--------|---------|

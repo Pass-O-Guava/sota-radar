@@ -318,7 +318,7 @@
       "id": "deepseek-v3",
       "name": "DeepSeek-V3",
       "developer": "DeepSeek",
-      "category": "closed_llm",
+      "category": "open_llm",
       "release_date": "2025-01-28",
       "license": "deepseek_license",
       "context_window": "128K",
@@ -339,13 +339,13 @@
         "代码生成"
       ],
       "hf_url": "https://huggingface.co/deepseek-ai/DeepSeek-V3",
-      "notes": " | 【更正-2026-04-07】DeepSeek License 为闭源许可，移至 closed_llm 类。HuggingFace 有权重 ≠ 开源。"
+      "notes": "|"
     },
     {
       "id": "deepseek-r1",
       "name": "DeepSeek-R1",
       "developer": "DeepSeek",
-      "category": "closed_llm",
+      "category": "open_llm",
       "release_date": "2025-01-20",
       "license": "deepseek_license",
       "benchmarks": {
@@ -365,7 +365,7 @@
         "代码生成"
       ],
       "hf_url": "https://huggingface.co/deepseek-ai/DeepSeek-R1",
-      "notes": "R1-0528更新：2025-05 | 【更正-2026-04-07】DeepSeek License 为闭源许可，移至 closed_llm 类。HuggingFace 有权重 ≠ 开源。"
+      "notes": "R1-0528更新：2025-05 |"
     },
     {
       "id": "qwen25-series",
