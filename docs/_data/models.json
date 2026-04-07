@@ -223,7 +223,7 @@
       "id": "qwen36-plus",
       "name": "Qwen3.6-Plus",
       "developer": "阿里巴巴",
-      "category": "open_llm",
+      "category": "closed_llm",
       "release_date": "2026-04-02",
       "license": "tongyi_qianwen",
       "context_window": "1M",
@@ -232,17 +232,18 @@
         "humaneval": "~88%",
         "math_500": "~92%"
       },
-      "pricing": "",
+      "pricing": "免费 via OpenRouter（预览版）",
       "highlights": [
-        "最新旗舰",
-        "1M上下文"
+        "企业级Agent部署优化",
+        "1M上下文",
+        "⚠️ 闭源模型：无公开权重，仅API调用"
       ],
       "use_cases": [
         "通用对话",
         "Agent"
       ],
-      "hf_url": "待确认",
-      "notes": "⚠️模态待核实（BuildFastWithAI称text-only，Alibaba博客提及视觉感知）"
+      "hf_url": "",
+      "notes": "【已更正-2026-04-07】经核实：Qwen3.6-Plus为闭源模型（BuildFastWithAI明确标注Closed source/not open weights；Reddit讨论确认先闭源后开源承诺）。HuggingFace无权重下载。Tongyi Qianwen License为闭源许可证。已从开源移至闭源文本类。"
     },
     {
       "id": "glm-5",
@@ -317,7 +318,7 @@
       "id": "deepseek-v3",
       "name": "DeepSeek-V3",
       "developer": "DeepSeek",
-      "category": "open_llm",
+      "category": "closed_llm",
       "release_date": "2025-01-28",
       "license": "deepseek_license",
       "context_window": "128K",
@@ -338,13 +339,13 @@
         "代码生成"
       ],
       "hf_url": "https://huggingface.co/deepseek-ai/DeepSeek-V3",
-      "notes": ""
+      "notes": " | 【更正-2026-04-07】DeepSeek License 为闭源许可，移至 closed_llm 类。HuggingFace 有权重 ≠ 开源。"
     },
     {
       "id": "deepseek-r1",
       "name": "DeepSeek-R1",
       "developer": "DeepSeek",
-      "category": "open_llm",
+      "category": "closed_llm",
       "release_date": "2025-01-20",
       "license": "deepseek_license",
       "benchmarks": {
@@ -364,13 +365,13 @@
         "代码生成"
       ],
       "hf_url": "https://huggingface.co/deepseek-ai/DeepSeek-R1",
-      "notes": "R1-0528更新：2025-05"
+      "notes": "R1-0528更新：2025-05 | 【更正-2026-04-07】DeepSeek License 为闭源许可，移至 closed_llm 类。HuggingFace 有权重 ≠ 开源。"
     },
     {
       "id": "qwen25-series",
       "name": "Qwen2.5 系列",
       "developer": "阿里巴巴",
-      "category": "open_llm",
+      "category": "closed_llm",
       "release_date": "2024-09",
       "license": "tongyi_qianwen",
       "benchmarks": {},
@@ -383,7 +384,7 @@
         "通用对话"
       ],
       "hf_url": "https://huggingface.co/Qwen/Qwen2.5",
-      "notes": "⚠️静态，19个月无更新"
+      "notes": "⚠️静态，19个月无更新 | 【更正-2026-04-07】tongyi_qianwen License 为闭源许可，移至 closed_llm 类。"
     },
     {
       "id": "llama-33",

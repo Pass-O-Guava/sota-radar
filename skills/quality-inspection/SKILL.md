@@ -1,6 +1,6 @@
-# SOTA Radar 质检团队工作标准（v3.0）
+# SOTA Radar 质检团队工作标准（v3.1）
 
-> **版本**：v3.0（2026-04-05）  
+> **版本**：v3.1（2026-04-07）— 新增 P0-6 开源/闭源分类强制规则  
 > **背景**：v1.0 形同虚设，v2.0 建立门禁，v3.0 确立质检价值观与闭环机制
 
 ---
@@ -32,6 +32,7 @@
 | P0-3 | **许可证必须可查证** | 不能写"应该可商用"，必须有官方页面明确说明 |
 | P0-4 | **模型真实存在** | 必须在 HuggingFace / ModelScope / 官方 GitHub 有实际页面 |
 | P0-5 | **信息源可验证** | 禁止使用无可查证来源的信息 |
+| **P0-6** | **开源 / 闭源分类必须正确** | **2026-04-07 新增（详见下方专项说明）** |
 
 ### P1（有一项 → 降级处理或拒绝入库）
 
@@ -125,9 +126,59 @@
 
 ---
 
+### P0-6 专项说明：开源 vs 闭源分类规则
+
+**核心判断原则**：
+
+开源模型必须同时满足：
+1. 官方提供**可下载的模型权重**（HuggingFace/ModelScope 有实际 .safetensors 或 .bin 文件）
+2. 许可证为以下类型之一：**Apache 2.0、MIT、BSD、DeepSeek License（已确认可商用条款）、GNU GPL**
+
+**闭源模型（禁止归入开源类）**：
+- Tongyi Qianwen License（Tongyi License）→ **闭源 API 许可**
+- DeepSeek License → **需核查条款**（DeepSeek-V3/R1 官方以 License 名称发布，≠ Apache 2.0）
+- NVIDIA License → **闭源，需申请才可商用**
+- Proprietary / Custom → **绝对闭源**
+- HuggingFace 有模型页 ≠ 开源（部分闭源模型也托管在 HuggingFace）
+
+**禁止规则（2026-04-07 硬性新增）**：
+- ❌ 不得仅凭"HuggingFace 有页"就将模型归入开源
+- ❌ 不得将 Tongyi Qianwen License、DeepSeek License、NVIDIA License 归入开源
+- ❌ 不得将「可商用」等同于「开源」——可商用 + 不可下载权重 = 闭源
+
+**已发现错误入库案例（2026-04-07）**：
+| 模型 | 原错误分类 | 正确分类 |
+|------|---------|---------|
+| Qwen3.6-Plus | open_llm（tongyi_qianwen） | closed_llm |
+| DeepSeek-V3 | open_llm（deepseek_license） | closed_llm |
+| DeepSeek-R1 | open_llm（deepseek_license） | closed_llm |
+| Qwen2.5 系列 | open_llm（tongyi_qianwen） | closed_llm（历史版本） |
+
+---
+
 ## 错误案例（质检员必修）
 
 ### 错误1：Mistral Small 4（2026-04-05 错误入库）
+
+| 错误项 | 正确做法 |
+|--------|---------|
+| 调研员报告："新模型 Mistral Small 4，Apache 2.0" | ✅ 基本信息正确可入库 |
+| 调研员报告："达到 SOTA" | ❌ 错误：无 Benchmark 数据，无量化证据 |
+| 质检员处理 | ✅ 已更正：降为"特色模型待补"，禁止声称 SOTA |
+
+**教训**：许可证正确 ≠ SOTA。有 Apache 2.0 只能说明可商用，不代表它是最强的。
+
+### 错误2：Qwen3.6-Plus / DeepSeek-V3 / DeepSeek-R1（2026-04-07 批量错误入库）
+
+| 错误项 | 正确做法 |
+|--------|---------|
+| 调研员报告：Tongyi Qianwen License = 开源 | ❌ 错误：Tongyi License 是闭源 API 许可 |
+| 调研员报告：DeepSeek License = 开源 | ❌ 错误：DeepSeek License ≠ Apache 2.0 |
+| 调研员报告：HuggingFace 有页 = 开源 | ❌ 错误：闭源模型（如 Llama 3.1 未发布前）也托管在 HuggingFace |
+| 质检员处理 | ✅ 已更正：models.json 中相关条目修正 |
+| 根因 | 混淆了「可商用」与「开源」两个不同概念 |
+
+**教训**：开源的定义是「可下载权重 + permissive 许可证（Apache 2.0/MIT/BSD）」，不是「可商用」。
 
 | 错误项 | 正确做法 |
 |--------|---------|
