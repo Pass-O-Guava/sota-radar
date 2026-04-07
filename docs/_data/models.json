@@ -1118,8 +1118,8 @@
         "Agent",
         "推理"
       ],
-      "hf_url": "待确认（zai-org/GLM-5）",
-      "notes": "API 2026-03-27上线；权重预计2026-04-06~07开源；94.6% Claude Opus 4.6编程性能"
+      "hf_url": "https://huggingface.co/zai-org/GLM-5",
+      "notes": "API 2026-03-27上线；权重预计2026-04-06~07开源；94.6% Claude Opus 4.6编程性能 | [2026-04-07] hf_url从\"待确认\"更正为实际HF地址。"
     },
     {
       "id": "gpt-54",
