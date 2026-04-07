@@ -27,7 +27,7 @@
         "高级编码",
         "科学研究"
       ],
-      "hf_url": "",
+      "hf_url": "https://openai.com/index/gpt-5",
       "notes": "发布后持续迭代，2026年初已达GPT-5.4"
     },
     {
@@ -56,7 +56,7 @@
         "大规模代码库开发",
         "Agent工作流"
       ],
-      "hf_url": "",
+      "hf_url": "https://docs.anthropic.com/en/docs/about-claude/models",
       "notes": "训练数据截止2025年8月"
     },
     {
@@ -85,7 +85,7 @@
         "计算机使用自动化",
         "金融分析"
       ],
-      "hf_url": "",
+      "hf_url": "https://docs.anthropic.com/en/docs/about-claude/models",
       "notes": "新版默认模型，训练数据截止2026年1月"
     },
     {
@@ -114,7 +114,7 @@
         "复杂推理",
         "Agent开发"
       ],
-      "hf_url": "",
+      "hf_url": "https://ai.google.dev/gemini-api/docs/models",
       "notes": "1M上下文beta阶段"
     },
     {
@@ -141,7 +141,7 @@
         "深度网络研究",
         "多应用工作流"
       ],
-      "hf_url": "",
+      "hf_url": "https://x.ai/api",
       "notes": "Beta 2026-02-17，API正式 2026-03-10"
     },
     {
@@ -165,7 +165,7 @@
         "创意写作",
         "模式识别"
       ],
-      "hf_url": "",
+      "hf_url": "https://platform.openai.com/docs/models/gpt-4-5",
       "notes": "⚠️ 已从API弃用，引导迁移至GPT-4.1及后续版本"
     },
     {
@@ -188,7 +188,7 @@
         "AI电话",
         "视频通话实时翻译"
       ],
-      "hf_url": "",
+      "hf_url": "https://ai.google.dev/gemini-api/docs/gemini-live",
       "notes": "Gemini Live重大升级"
     },
     {
@@ -216,7 +216,7 @@
         "编程辅助",
         "科学问题"
       ],
-      "hf_url": "",
+      "hf_url": "https://platform.openai.com/docs/models/o4-mini",
       "notes": ""
     },
     {
@@ -242,7 +242,7 @@
         "通用对话",
         "Agent"
       ],
-      "hf_url": "",
+      "hf_url": "https://qwen.ai/blog?id=qwen3.6",
       "notes": "【已更正-2026-04-07】经核实：Qwen3.6-Plus为闭源模型（BuildFastWithAI明确标注Closed source/not open weights；Reddit讨论确认先闭源后开源承诺）。HuggingFace无权重下载。Tongyi Qianwen License为闭源许可证。已从开源移至闭源文本类。"
     },
     {
@@ -429,7 +429,7 @@
         "Agent构建",
         "深度研究"
       ],
-      "hf_url": "",
+      "hf_url": "https://docs.anthropic.com/en/docs/about-claude/models",
       "notes": "知识截止2025年5月"
     },
     {
@@ -455,7 +455,7 @@
         "自主Agent",
         "编码任务"
       ],
-      "hf_url": "",
+      "hf_url": "https://docs.anthropic.com/en/docs/about-claude/models",
       "notes": ""
     },
     {
@@ -553,7 +553,7 @@
         "端到端项目级编码",
         "自主学习迭代"
       ],
-      "hf_url": "",
+      "hf_url": "https://www.minimax.io/models/text/m27",
       "notes": "【新增-2026-04-07】MiniMax M2.7为闭源模型（非开源），通过MiniMax API调用。自我进化技术为行业首创。"
     },
     {
@@ -645,7 +645,7 @@
         "多模态理解",
         "语音+视觉"
       ],
-      "hf_url": "",
+      "hf_url": "https://huggingface.co/microsoft/Phi-4-multimodal-instruct",
       "notes": ""
     },
     {
@@ -667,7 +667,7 @@
         "视觉推理",
         "链式思考"
       ],
-      "hf_url": "",
+      "hf_url": "https://llava-vl.github.io/",
       "notes": ""
     },
     {
@@ -688,7 +688,7 @@
       "use_cases": [
         "视觉理解"
       ],
-      "hf_url": "",
+      "hf_url": "https://huggingface.co/deepseek-ai/deepseek-vl2",
       "notes": ""
     },
     {
@@ -710,7 +710,7 @@
         "视觉理解",
         "计算机使用自动化"
       ],
-      "hf_url": "",
+      "hf_url": "https://docs.anthropic.com/en/docs/about-claude/models",
       "notes": ""
     },
     {
@@ -732,7 +732,7 @@
         "多模态理解",
         "视觉对话"
       ],
-      "hf_url": "",
+      "hf_url": "https://platform.openai.com/docs/models/gpt-4o",
       "notes": ""
     },
     {
@@ -756,7 +756,7 @@
         "视觉编程",
         "Agent工作流"
       ],
-      "hf_url": "",
+      "hf_url": "https://www.zhipuai.cn/",
       "notes": ""
     },
     {
@@ -775,7 +775,7 @@
         "语音识别",
         "会议转写"
       ],
-      "hf_url": "",
+      "hf_url": "https://huggingface.co/Qwen/Qwen3-ASR-0.6B",
       "notes": ""
     },
     {
@@ -855,7 +855,7 @@
         "全模态理解",
         "语音对话"
       ],
-      "hf_url": "",
+      "hf_url": "https://qwen.ai/blog?id=qwen3-omni",
       "notes": ""
     },
     {
@@ -873,7 +873,7 @@
         "多模态理解",
         "图像生成"
       ],
-      "hf_url": "",
+      "hf_url": "https://huggingface.co/deepseek-ai/Janus-Pro",
       "notes": ""
     },
     {
@@ -917,7 +917,7 @@
       "use_cases": [
         "英文语义检索"
       ],
-      "hf_url": "",
+      "hf_url": "https://huggingface.co/nvidia/NV-Embed-v2",
       "notes": "非商业默认，申请后可商用"
     },
     {
@@ -938,7 +938,7 @@
       "use_cases": [
         "中文语义检索"
       ],
-      "hf_url": "",
+      "hf_url": "https://cloud.tencent.com/document/product/271/86482",
       "notes": "腾讯云API"
     },
     {
@@ -959,7 +959,7 @@
       "use_cases": [
         "多语言检索"
       ],
-      "hf_url": "",
+      "hf_url": "https://huggingface.co/BAAI/bge-m3",
       "notes": ""
     },
     {
@@ -1146,7 +1146,7 @@
         "Agent工作流",
         "高级推理"
       ],
-      "hf_url": "",
+      "hf_url": "https://openai.com/index/gpt-5",
       "notes": "ChatGPT Plus/Pro/Edu可用；最强旗舰型号之一"
     },
     {
@@ -1166,7 +1166,7 @@
         "语音字幕",
         "语音控制"
       ],
-      "hf_url": "",
+      "hf_url": "https://www.minimax.io/models/speech/m1",
       "notes": "Microsoft MAI系列首批模型之一"
     },
     {
@@ -1186,7 +1186,7 @@
         "配音",
         "TTS"
       ],
-      "hf_url": "",
+      "hf_url": "https://www.minimax.io/models/speech/m1",
       "notes": "极速语音生成模型，MAI系列"
     },
     {
@@ -1205,7 +1205,7 @@
         "图像生成",
         "艺术创作"
       ],
-      "hf_url": "",
+      "hf_url": "https://www.minimax.io/models/image/m2",
       "notes": "Microsoft MAI图像生成模型，MAI系列"
     },
     {
