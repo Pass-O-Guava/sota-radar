@@ -1,4 +1,4 @@
-# SOTA Radar
+# 📡 SOTA Radar
 
 > 打造高质量、权威、能变现的 SOTA 模型知识库。
 
