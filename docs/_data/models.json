@@ -517,6 +517,29 @@
       "notes": "【新增-2026-04-07】MiniMax M2.7为闭源模型（非开源），通过MiniMax API调用。自我进化技术为行业首创。"
     },
     {
+      "id": "mimo-v2-pro",
+      "name": "MiMo-V2-Pro",
+      "developer": "小米",
+      "category": "open_llm",
+      "release_date": "2026-03-18",
+      "license": "mit",
+      "benchmarks": {
+        "pinchbench": "接近GPT-5.2/Claude Opus水平"
+      },
+      "pricing": "",
+      "highlights": [
+        "小米MiMo-V2-Pro：2026-03-18发布；Agent任务评测PinchBench/ClawEval表现接近GPT-5.2",
+        "32B参数；性价比极高"
+      ],
+      "use_cases": [
+        "Agent任务",
+        "端到端编码",
+        "专业任务"
+      ],
+      "hf_url": "https://mimo.xiaomi.com/mimo-v2-pro",
+      "notes": "【新增-2026-04-07】March 2026九大新模型之一；误传为Li Auto（实为小米）。"
+    },
+    {
       "id": "internvl35",
       "name": "InternVL3.5",
       "developer": "上海AI Lab",
@@ -804,7 +827,7 @@
       "name": "Qwen3-Omni",
       "developer": "阿里巴巴",
       "category": "multimodal",
-      "release_date": "2025-12",
+      "release_date": "2026-03-30",
       "license": "tongyi_qianwen",
       "pricing": "",
       "highlights": [
@@ -816,7 +839,7 @@
         "语音对话"
       ],
       "hf_url": "https://qwen.ai/blog?id=qwen3-omni",
-      "notes": ""
+      "notes": "| [更正-2026-04-07] 发布日期从2025-12更正为2026-03-30。"
     },
     {
       "id": "deepseek-janus-pro",
@@ -1110,9 +1133,35 @@
       "notes": "ChatGPT Plus/Pro/Edu可用；最强旗舰型号之一"
     },
     {
+      "id": "gpt-54-mini",
+      "name": "GPT-5.4 mini",
+      "developer": "OpenAI",
+      "category": "closed_llm",
+      "release_date": "2026-03-17",
+      "license": "proprietary",
+      "context_window": "400K",
+      "benchmarks": {
+        "vals_index": "57.14%",
+        "gpqa": "87.5%",
+        "swe_bench_pro": "54.4%"
+      },
+      "pricing": "$0.75/1M输入，$4.50/1M输出",
+      "highlights": [
+        "GPT-5.4 mini：GPT-5家族轻量版；接近GPT-5.4水平；400K上下文",
+        "Benchmark：GPQA 87.5%，SWE-bench Pro 54.4%"
+      ],
+      "use_cases": [
+        "高性价比推理",
+        "低延迟任务",
+        "轻量级Agent"
+      ],
+      "hf_url": "https://platform.openai.com/docs/models",
+      "notes": "【新增-2026-04-07】March 2026九大新模型之一。"
+    },
+    {
       "id": "mai-transcribe-1",
       "name": "MAI-Transcribe-1",
-      "developer": "Microsoft",
+      "developer": "MiniMax",
       "category": "alm",
       "release_date": "2026-04-02",
       "license": "proprietary",
@@ -1127,12 +1176,12 @@
         "语音控制"
       ],
       "hf_url": "https://www.minimax.io/models/speech/m1",
-      "notes": "Microsoft MAI系列首批模型之一"
+      "notes": "Microsoft MAI系列首批模型之一 | [更正-2026-04-07] 开发商从Microsoft更正为MiniMax。"
     },
     {
       "id": "mai-voice-1",
       "name": "MAI-Voice-1",
-      "developer": "Microsoft",
+      "developer": "MiniMax",
       "category": "alm",
       "release_date": "2026-04-02",
       "license": "proprietary",
@@ -1147,12 +1196,12 @@
         "TTS"
       ],
       "hf_url": "https://www.minimax.io/models/speech/m1",
-      "notes": "极速语音生成模型，MAI系列"
+      "notes": "极速语音生成模型，MAI系列 | [更正-2026-04-07] 开发商从Microsoft更正为MiniMax。"
     },
     {
       "id": "mai-image-2",
       "name": "MAI-Image-2",
-      "developer": "Microsoft",
+      "developer": "MiniMax",
       "category": "image_generation",
       "release_date": "2026-04-02",
       "license": "proprietary",
@@ -1166,7 +1215,7 @@
         "艺术创作"
       ],
       "hf_url": "https://www.minimax.io/models/image/m2",
-      "notes": "Microsoft MAI图像生成模型，MAI系列"
+      "notes": "Microsoft MAI图像生成模型，MAI系列 | [更正-2026-04-07] 开发商从Microsoft更正为MiniMax。"
     },
     {
       "id": "voxtral-tts",
