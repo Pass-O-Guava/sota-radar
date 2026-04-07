@@ -1,11 +1,8 @@
 # 知识资产总索引
 
-## 统计
+> 共 12 个模型，最后更新：2026-04-07。
 
-- 模型总数：12 个
-- 最后更新：2026-04-07
-
-## 模型知识库（三层结构）
+## 模型知识库
 
 | 层级 | 路径 | 说明 |
 |------|------|------|
@@ -25,8 +22,3 @@
 ## Skills 文档
 
 - [Skills 总索引](skills/README.md)
-- [调研员](skills/researcher.md)
-- [质检员](skills/reviewer.md)
-- [归档员](skills/archiver.md)
-- [协调员](skills/coordinator.md)
-- [自审员](skills/self-review.md)
