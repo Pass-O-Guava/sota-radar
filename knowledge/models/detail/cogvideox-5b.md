@@ -1,27 +1,6 @@
----
-title: CogVideoX-5B
-model_id: cogvideox-5b
-category: Video
-publisher: 智谱AI
-params: 5B
-modality: video generation
-license_tag: ✅可商用
-published_date: 2026-04-05
-indexed_date: 2026-04-07
-updated_at: 2026-04-07T00:48:56+08:00
-updated_by: Curator Agent (P0 Fix · 2026-04-07)
-is_sota: False
-hf_url: https://huggingface.co/THUDM/CogVideoX-5B
-ms_url: （暂无）
-source: official
-benchmark_count: 0
----
-
 # CogVideoX-5B
 
-> Video · 智谱AI · 发布：2026-04-05 · 更新：2026-04-07 00:49
-
-**🔹 模型**
+> Video · 智谱AI · 更新：2026-04-05
 
 ## 基本信息
 
@@ -39,11 +18,11 @@ benchmark_count: 0
 
 | Benchmark | Score | Source |
 |-----------|-------|--------|
-n| （待补充） | | |
+n| （暂无） | | |
 
 ## 简介
 
-智谱开源视频生成模型，支持高分辨率视频（来源：智谱AI 官方）
+# CogVideoX-5B  ## 基本信息 - 发布方：智谱AI - 参数量：5B - 模态：video generation - 发布日期：2026-03  ## 许可证 Apache 2.0 ✅可商用  ## 入选理由 智谱开源视频生成模型，支持高分辨率视频
 
 ## 链接
 
@@ -51,4 +30,4 @@ n| （待补充） | | |
 - ModelScope：（暂无）
 
 ---
-*来源：SOTA Radar 知识库 · 最后更新：2026-04-07 00:49 · [返回Video分类](../categories/video-models.md)*
+*SOTA Radar · 2026-04-05 · [返回Video分类](../categories/video-models.md) · GitHub自动更新 2026-04-07*
