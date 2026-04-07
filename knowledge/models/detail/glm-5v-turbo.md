@@ -31,4 +31,4 @@ n| MMMU | ~79% | 官方评测 |
 - ModelScope：（暂无）
 
 ---
-*来源：SOTA Radar · 2026-04-05 · [返回分类](../categories/vlm-models.md) · GitHub自动更新 2026-04-07*
+*SOTA Radar · 2026-04-05 · [返回VLM分类](../categories/vlm-models.md) · GitHub自动更新 2026-04-07*
