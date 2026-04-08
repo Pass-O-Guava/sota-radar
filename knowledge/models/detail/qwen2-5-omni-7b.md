@@ -30,4 +30,4 @@ n| （暂无） | | |
 - ModelScope：（暂无）
 
 ---
-*SOTA Radar · 2026-04-05 · [返回ALM分类](../categories/audio-models.md) · GitHub自动更新 2026-04-07*
+*SOTA Radar · 2026-04-05 · [返回ALM分类](../categories/audio-models.md) · GitHub自动更新 2026-04-08*
