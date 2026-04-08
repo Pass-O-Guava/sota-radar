@@ -1,7 +1,7 @@
 # SOTA Radar — 模型总览
 
 > 数据源：`docs/_data/models.json`  
-> 最后更新：2026-04-07 13:30 UTC+8  
+> 最后更新：2026-04-08 13:30 UTC+8  
 > 由 SOTA Radar 自动系统维护
 
 ---

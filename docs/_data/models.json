@@ -1,7 +1,7 @@
 {
   "_comment": "SOTA Radar 单一数据源 - 所有文档从这个文件生成",
   "_last_updated": "2026-04-08",
-  "_updated_by": "SOTA Radar Cron (下午更新 13:30 UTC+8)",
+  "_updated_by": "SOTA Radar Cron (晚间更新 13:30 UTC+8)",
   "models": [
     {
       "id": "gpt-5",
@@ -1802,6 +1802,131 @@
         "<150ms延迟"
       ],
       "hf_url": "https://huggingface.co/Qwen/Qwen3-TTS"
+    },
+    {
+      "id": "qwen35-122b-a10b",
+      "name": "Qwen3.5-122B-A10B",
+      "developer": "阿里巴巴",
+      "category": "open_vlm",
+      "release_date": "2026-02-24",
+      "license": "apache_2",
+      "context_window": "262K",
+      "benchmarks": {
+        "aa_index": "42",
+        "mmmup_pro": "待补"
+      },
+      "pricing": "",
+      "highlights": [
+        "122B总/10B激活MoE架构",
+        "262K上下文",
+        "Apache 2.0开源"
+      ],
+      "use_cases": [
+        "多模态推理",
+        "高效推理",
+        "VLM任务"
+      ],
+      "hf_url": "https://huggingface.co/Qwen/Qwen3.5-122B-A10B",
+      "notes": "【新增-2026-04-08】Qwen3.5系列中端VLM，122B总/10B激活。Apache 2.0开源。Benchmark数据（AA Index=42）已入库，MMLU/HumanEval待从HF官方页面补充。"
+    },
+    {
+      "id": "qwen35-9b",
+      "name": "Qwen3.5-9B",
+      "developer": "阿里巴巴",
+      "category": "open_llm",
+      "release_date": "2026-03-02",
+      "license": "apache_2",
+      "context_window": "32K",
+      "benchmarks": {
+        "ifel": "89.2%（BF16）/ 91.5%（官方）",
+        "gsm8k_cot": "82.8%",
+        "aime": "待补",
+        "mmlu": "待补"
+      },
+      "pricing": "",
+      "highlights": [
+        "Apache 2.0完全开源",
+        "9B轻量：MacBook可运行",
+        "IFEval 91.5%",
+        "与GPT OSS 120B性能相当（体积小13倍）"
+      ],
+      "use_cases": [
+        "边缘设备AI",
+        "本地部署",
+        "移动端推理"
+      ],
+      "hf_url": "https://huggingface.co/Qwen/Qwen3.5-9B",
+      "notes": "【新增-2026-04-08】Qwen3.5 Small系列旗舰款，Apache 2.0开源。AIME/MMLU/HumanEval待从HF官方补充。"
+    },
+    {
+      "id": "qwen35-4b",
+      "name": "Qwen3.5-4B",
+      "developer": "阿里巴巴",
+      "category": "open_llm",
+      "release_date": "2026-03-02",
+      "license": "apache_2",
+      "context_window": "32K",
+      "benchmarks": {
+        "ifel": "89.8%（BF16官方）",
+        "gsm8k_cot": "94.0%（vLLM FP16）",
+        "aime": "待补",
+        "mmlu": "待补"
+      },
+      "pricing": "",
+      "highlights": [
+        "Apache 2.0完全开源",
+        "4B超轻量：手机可运行",
+        "IFEval 89.8%"
+      ],
+      "use_cases": [
+        "手机端AI",
+        "极致轻量推理",
+        "本地部署"
+      ],
+      "hf_url": "https://huggingface.co/Qwen/Qwen3.5-4B",
+      "notes": "【新增-2026-04-08】Qwen3.5 Small系列中端款，Apache 2.0开源。MMLU/HumanEval/AIME待从HF官方补充。"
+    },
+    {
+      "id": "qwen35-2b",
+      "name": "Qwen3.5-2B",
+      "developer": "阿里巴巴",
+      "category": "open_llm",
+      "release_date": "2026-03-02",
+      "license": "apache_2",
+      "context_window": "32K",
+      "benchmarks": {},
+      "pricing": "",
+      "highlights": [
+        "Apache 2.0完全开源",
+        "2B超轻量：手机可运行"
+      ],
+      "use_cases": [
+        "手机端AI",
+        "极致轻量推理"
+      ],
+      "hf_url": "https://huggingface.co/Qwen/Qwen3.5-2B",
+      "notes": "【新增-2026-04-08】Qwen3.5 Small系列入门款，Apache 2.0开源。Benchmark数据待从HF官方补充。"
+    },
+    {
+      "id": "qwen35-0.8b",
+      "name": "Qwen3.5-0.8B",
+      "developer": "阿里巴巴",
+      "category": "open_llm",
+      "release_date": "2026-03-02",
+      "license": "apache_2",
+      "context_window": "32K",
+      "benchmarks": {},
+      "pricing": "",
+      "highlights": [
+        "Apache 2.0完全开源",
+        "0.8B极致轻量：Qwen3.5系列最小成员"
+      ],
+      "use_cases": [
+        "手机端AI",
+        "极致轻量推理"
+      ],
+      "hf_url": "https://huggingface.co/Qwen/Qwen3.5-0.8B",
+      "notes": "【新增-2026-04-08】Qwen3.5 Small系列最小款，Apache 2.0开源。Benchmark数据待从HF官方补充。"
     }
   ],
   "_curated": true
