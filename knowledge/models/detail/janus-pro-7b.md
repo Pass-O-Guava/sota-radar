@@ -30,4 +30,4 @@ n| MMMU | ~63.2% | 官方评测 |
 - ModelScope：（暂无）
 
 ---
-*SOTA Radar · 2026-04-05 · [返回Unified分类](../categories/unified-models.md) · GitHub自动更新 2026-04-07*
+*SOTA Radar · 2026-04-05 · [返回Unified分类](../categories/unified-models.md) · GitHub自动更新 2026-04-08*
